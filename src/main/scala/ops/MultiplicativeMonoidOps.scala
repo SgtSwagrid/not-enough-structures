@@ -4,7 +4,8 @@ package ops
 import io.github.sgtswagrid.structures.MultiplicativeMonoid
 
 /** Extension methods for [[MultiplicativeMonoid]]. */
-trait MultiplicativeMonoidOps extends MultiplicativeSemigroupOps, MultiplicativeIdentityOps:
+trait MultiplicativeMonoidOps
+  extends MultiplicativeSemigroupOps, MultiplicativeIdentityOps:
 
   extension [X : MultiplicativeMonoid as X](x: X)
 
