@@ -36,7 +36,8 @@ trait OrderingOps:
     /**
       * Clamps this value to the inclusive range `[lb, ub]`.
       *
-      * @return [[lb]] if this value is less than [[lb]], [[ub]] if greater
-      *   than [[ub]], or this value otherwise.
+      * @return
+      *   [[lb]] if this value is less than [[lb]], [[ub]] if greater than
+      *   [[ub]], or this value otherwise.
       */
     inline def clamp(lb: X, ub: X): X = x.max(lb).min(ub)

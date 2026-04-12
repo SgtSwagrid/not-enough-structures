@@ -90,10 +90,10 @@ The `ordered` subpackage provides `Ordered`-prefixed variants that combine each 
 ```scala 3
 import io.github.sgtswagrid.structures.ordered.OrderedField.{*, given}
 
-def clamp[X : OrderedField](x: X, lo: X, hi: X): X = x.max(lo).min(hi)
+def clamp[X : OrderedField](x: X, lb: X, ub: X): X = x.clamp(lb, ub)
 ```
 
-`[X : OrderedField]` is equivalent to `[X : {Field, Ordering}]` but is usable in contexts where multiple bounds cannot be expressed (e.g., as a type argument to another generic type class).
+`[X : OrderedField]` provides the same operations as `[X : {Field, Ordering}]` and is usable in contexts where multiple bounds cannot be expressed (e.g., as a type argument to another generic type class). Note that `OrderedField[X]` must be provided explicitly — it is not derived automatically from `Field[X]` and `Ordering[X]`.
 
 ---
 
@@ -168,7 +168,7 @@ Every type class above has a corresponding `Ordered`-prefixed variant in the `or
 | `OrderedSemifield[X]` | `Semifield[X]`, `Ordering[X]` |
 | `OrderedField[X]` | `Field[X]`, `Ordering[X]` |
 
-The ordered variants add the comparison operators `<`, `<=`, `>`, `>=`, `min`, `max`, and `compare` from `Ordering`. They also make `abs` available on `OrderedAdditiveGroup` and `sign` available on `OrderedRing`.
+The ordered variants add the comparison operators `<`, `<=`, `>`, `>=`, `min`, `max`, `clamp`, and `compare` from `Ordering`. They also make `abs` available on `OrderedAdditiveGroup` and `sign` available on `OrderedRing`.
 
 ---
 
