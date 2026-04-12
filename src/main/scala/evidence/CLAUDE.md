@@ -7,3 +7,4 @@ It is not intended for human eyes.
 
 * Read the [README.md](README.md) from this package before proceeding.
 * This package contains evidence that assorted in-built types conform to the requirements of the provided algebraic structures.
+* After adding a new trait to this package, make sure to mix it into the builder trait hierarchy as appropriate.
