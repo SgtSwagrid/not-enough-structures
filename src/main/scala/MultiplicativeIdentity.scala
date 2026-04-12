@@ -23,7 +23,8 @@ trait MultiplicativeIdentity[+X]:
   * }}}
   * to receive all necessary syntax for working with one.
   */
-object MultiplicativeIdentity extends MultiplicativeIdentityBuilder, MultiplicativeIdentityOps:
+object MultiplicativeIdentity
+  extends MultiplicativeIdentityBuilder, MultiplicativeIdentityOps:
 
   export io.github.sgtswagrid.structures.MultiplicativeIdentity
 

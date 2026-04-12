@@ -6,4 +6,6 @@ import io.github.sgtswagrid.structures.ordered.OrderedAdditiveMonoid
 
 /** Extension methods for [[OrderedAdditiveMonoid]]. */
 trait OrderedAdditiveMonoidOps
-  extends AdditiveMonoidOps, OrderedAdditiveSemigroupOps, OrderedAdditiveIdentityOps
+  extends AdditiveMonoidOps,
+          OrderedAdditiveSemigroupOps,
+          OrderedAdditiveIdentityOps

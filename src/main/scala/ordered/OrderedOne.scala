@@ -15,7 +15,9 @@ trait OrderedOne[X] extends MultiplicativeIdentity[X], Ordering[X]
   * }}}
   * to receive all necessary syntax for working with ordered one.
   */
-object OrderedOne extends OrderedMultiplicativeIdentityBuilder, OrderedMultiplicativeIdentityOps:
+object OrderedOne
+  extends OrderedMultiplicativeIdentityBuilder,
+          OrderedMultiplicativeIdentityOps:
 
   export io.github.sgtswagrid.structures.ordered.OrderedOne
 

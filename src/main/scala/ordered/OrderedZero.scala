@@ -27,7 +27,8 @@ trait OrderedZero[X] extends AdditiveIdentity[X], Ordering[X]:
   * }}}
   * to receive all necessary syntax for working with ordered zero.
   */
-object OrderedZero extends OrderedAdditiveIdentityBuilder, OrderedAdditiveIdentityOps:
+object OrderedZero
+  extends OrderedAdditiveIdentityBuilder, OrderedAdditiveIdentityOps:
 
   export io.github.sgtswagrid.structures.ordered.OrderedZero
 

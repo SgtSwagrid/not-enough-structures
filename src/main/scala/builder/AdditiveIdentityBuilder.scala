@@ -5,4 +5,5 @@ import io.github.sgtswagrid.structures.AdditiveIdentity
 import io.github.sgtswagrid.structures.ordered.builder.OrderedAdditiveIdentityBuilder
 
 /** Methods for constructing [[AdditiveIdentity]] type classes. */
-trait AdditiveIdentityBuilder extends OrderedAdditiveIdentityBuilder, AdditiveMonoidBuilder
+trait AdditiveIdentityBuilder
+  extends OrderedAdditiveIdentityBuilder, AdditiveMonoidBuilder

@@ -4,4 +4,5 @@ package ordered.builder
 import io.github.sgtswagrid.structures.ordered.OrderedOne
 
 /** Methods for constructing [[OrderedOne]] type classes. */
-trait OrderedMultiplicativeIdentityBuilder extends OrderedMultiplicativeMonoidBuilder
+trait OrderedMultiplicativeIdentityBuilder
+  extends OrderedMultiplicativeMonoidBuilder
