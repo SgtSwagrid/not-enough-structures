@@ -196,7 +196,7 @@ The following `given` instances are provided out of the box. They are available 
 
 - **Scala 3 native.** Built from the ground up with `given`/`using`, new-style context bounds, and significant indentation. No legacy implicit machinery.
 - **Fine-grained hierarchy.** The type class ladder spans from `AdditiveSemigroup` all the way up through `Semiring`, `Ring`, `EuclideanRing`, `Semifield`, and `Field`, with many intermediate structures (e.g. `DifferenceMonoid`, `EuclideanMonoid`) that other libraries skip over. You can express precisely the capabilities you need.
-- **Additive/multiplicative split.** Addition and multiplication are tracked as distinct capabilities, mirroring standard mathematical convention and enabling constraints like `Semiring` that are inexpressible in libraries with a single abstract binary operation.
+- **Additive/multiplicative split.** Addition and multiplication are tracked as distinct capabilities via separate inheritance hierarchies, mirroring standard mathematical convention and enabling constraints like `Semiring` that are inexpressible in libraries with a single abstract binary operation.
 - **First-class ordered variants.** `OrderedRing`, `OrderedField`, etc. are proper type classes, not just a convention for pairing a structure with `Ordering`. They expose additional operations (`abs`, `sign`, `clamp`) that require both capabilities simultaneously.
 - **Zero-import evidence.** Instances for in-built types (`Int`, `Double`, etc.) are propagated through the companion object hierarchy, so call sites need no extra imports.
 - **Minimal footprint.** No number types, no approximate data structures, no lattices. Just the structural layer.
@@ -205,13 +205,13 @@ The following `given` instances are provided out of the box. They are available 
 
 The standard library's numerical type classes are monolithic: `Numeric` bundles addition, subtraction, multiplication, absolute value, sign, and conversions all at once, with no way to express a weaker requirement. `Ordering` is a separate, unrelated type class with no connection to the numeric hierarchy.
 
-### Cats / Cats-kernel (`Semigroup`, `Monoid`, `Group`, `Ring`, …)
+### Cats / Cats-kernel (`Semigroup`, `Monoid`, `Group`)
 
-Cats has two layers. The core `Semigroup`/`Monoid`/`Group` types treat addition and multiplication as the same abstract operation, with no syntactic or semantic distinction between `+` and `*`. However, Cats also absorbed the typelevel/algebra library (see below), so `cats-kernel` now includes `Ring`, `Field`, `EuclideanRing`, etc. with an additive/multiplicative split. For the algebraic-structure use case, Cats is a reasonable choice, though it carries a much larger dependency footprint.
+Cats treats addition and multiplication as the same abstract operation, with no syntactic or semantic distinction between `+` and `*`. There is no `Ring`, `Field`, or equivalent, and no way to express a constraint like "has both addition and multiplication with compatible identities". It is a good fit for purely additive aggregation but is not designed for numeric abstractions.
 
-### Algebra (typelevel/algebra)
+### Algebra (typelevel/algebra / cats-algebra)
 
-Originally an attempt to unify the algebraic type classes from Spire and Algebird, this library has since been merged into Cats and is now maintained there. It targets Scala 2 and 3.
+Originally a standalone attempt to unify the algebraic type classes from Spire and Algebird, algebra is now maintained as the `algebra-core` subproject of Cats. It provides `Ring`, `Field`, `EuclideanRing`, and an additive/multiplicative split, and depends only on `cats-kernel`. It targets Scala 2 and 3. Not Enough Structures is a Scala 3-native alternative in the same spirit: a self-contained algebraic-structure layer with no dependencies to speak of.
 
 ### Algebird (twitter/algebird)
 
