@@ -16,5 +16,5 @@ scalacOptions ++= Seq(
 )
 
 lazy val `not-enough-structures` = (project in file(".")).settings(
-  packagePrefix := "io.github.sgtswagrid",
+  packagePrefix := "io.github.sgtswagrid.structures",
 )
