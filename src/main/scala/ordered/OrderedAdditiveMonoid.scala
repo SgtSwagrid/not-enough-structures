@@ -7,7 +7,9 @@ import io.github.sgtswagrid.structures.ordered.ops.OrderedAdditiveMonoidOps
 
 /** An ordered version of [[AdditiveMonoid]]. */
 trait OrderedAdditiveMonoid[X]
-  extends AdditiveMonoid[X], OrderedAdditiveSemigroup[X], OrderedAdditiveIdentity[X]
+  extends AdditiveMonoid[X],
+          OrderedAdditiveSemigroup[X],
+          OrderedAdditiveIdentity[X]
 
 /**
   * The companion object for [[OrderedAdditiveMonoid]]. Import as

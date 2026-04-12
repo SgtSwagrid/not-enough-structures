@@ -32,7 +32,10 @@ object OrderedAdditiveIdentity
 
   export io.github.sgtswagrid.structures.ordered.OrderedAdditiveIdentity
 
-  /** The [[OrderedAdditiveIdentity]] instance describing the current algebra system. */
+  /**
+    * The [[OrderedAdditiveIdentity]] instance describing the current algebra
+    * system.
+    */
   inline def orderedAdditiveIdentity[
     X : OrderedAdditiveIdentity as orderedAdditiveIdentity,
   ]: OrderedAdditiveIdentity[X] = orderedAdditiveIdentity
