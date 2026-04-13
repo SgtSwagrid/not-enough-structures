@@ -1,6 +1,4 @@
-ThisBuild / name           := "Not Enough Structures"
-ThisBuild / normalizedName := "not-enough-structures"
-ThisBuild / description    := "A collection of type classes for algebraic structures in Scala."
+ThisBuild / description := "A collection of type classes for algebraic structures in Scala."
 
 ThisBuild / homepage :=
   Some(url("https://github.com/SgtSwagrid/not-enough-structures"))
