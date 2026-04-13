@@ -236,4 +236,5 @@ Note the inclusion of `v` in the GitHub release name but not the resulting Maven
 
 ## 👁️ See also
 
-Check out [Abstract Nonsense](https://github.com/SgtSwagrid/abstract-nonsense) for some different abstractions with a more category-theoretic focus.
+- Check out [Abstract Nonsense](https://github.com/SgtSwagrid/abstract-nonsense) for some different abstractions with a more category-theoretic focus.
+- This library was made using [Scala Library Template](https://github.com/SgtSwagrid/scala-library-template).
