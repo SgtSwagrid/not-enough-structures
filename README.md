@@ -1,7 +1,7 @@
 <div align="center">
 
   <h1>🌀 Scalgebra</h1>
-  <p>A fine-grained collection of algebraic type classes for Scala 3 library authors.</p>
+  <p>Fine-grained algebraic type classes for Scala 3 library authors. </p>
   
   <span>
     <a href="https://github.com/SgtSwagrid/scalgebra/actions/workflows/build-integrity.yml"><img src="https://github.com/SgtSwagrid/scalgebra/actions/workflows/build-integrity.yml/badge.svg" alt="Build status" /></a>
