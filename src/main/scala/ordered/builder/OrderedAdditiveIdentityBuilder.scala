@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedAdditiveIdentity
-import com.alecdorrington.structures.ordered.OrderedAdditiveIdentity
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedAdditiveIdentity
+import com.alecdorrington.scalgebra.ordered.OrderedAdditiveIdentity
 
 /** Methods for constructing [[OrderedAdditiveIdentity]] type classes. */
 trait OrderedAdditiveIdentityBuilder

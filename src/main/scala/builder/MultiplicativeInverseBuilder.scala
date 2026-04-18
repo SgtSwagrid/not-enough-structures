@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.MultiplicativeInverse
-import com.alecdorrington.structures.evidence.function.FunctionIsMultiplicativeInverse
-import com.alecdorrington.structures.evidence.future.FutureIsMultiplicativeInverse
-import com.alecdorrington.structures.evidence.tuple.TupleIsMultiplicativeInverse
-import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeInverseBuilder
+import com.alecdorrington.scalgebra.MultiplicativeInverse
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsMultiplicativeInverse
+import com.alecdorrington.scalgebra.evidence.future.FutureIsMultiplicativeInverse
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsMultiplicativeInverse
+import com.alecdorrington.scalgebra.ordered.builder.OrderedMultiplicativeInverseBuilder
 
 /** Methods for constructing [[MultiplicativeInverse]] type classes. */
 trait MultiplicativeInverseBuilder

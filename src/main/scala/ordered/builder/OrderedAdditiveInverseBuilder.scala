@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedAdditiveInverse
-import com.alecdorrington.structures.ordered.OrderedAdditiveInverse
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedAdditiveInverse
+import com.alecdorrington.scalgebra.ordered.OrderedAdditiveInverse
 
 /** Methods for constructing [[OrderedAdditiveInverse]] type classes. */
 trait OrderedAdditiveInverseBuilder

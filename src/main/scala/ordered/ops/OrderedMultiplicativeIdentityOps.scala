@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.ops
 
-import com.alecdorrington.structures.ops.MultiplicativeIdentityOps
-import com.alecdorrington.structures.ordered.OrderedMultiplicativeIdentity
+import com.alecdorrington.scalgebra.ops.MultiplicativeIdentityOps
+import com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeIdentity
 
 /** Extension methods for [[OrderedMultiplicativeIdentity]]. */
 trait OrderedMultiplicativeIdentityOps

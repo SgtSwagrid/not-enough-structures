@@ -1,4 +1,4 @@
-## com.alecdorrington.structures.builder
+## com.alecdorrington.scalgebra.builder
 
 This package contains _builders_ that provide
 [givens](https://docs.scala-lang.org/scala3/reference/contextual/givens.html)
@@ -16,7 +16,7 @@ Everything contained here is available there.
 For any structure, e.g. `Ring`, use the following import statement
 to receive all implementations of that structure for in-built types:
 ```scala 3
-import com.alecdorrington.structures.<Structure>.{*, given}
+import com.alecdorrington.scalgebra.<Structure>.{*, given}
 ```
 
 ### Inheritance structure

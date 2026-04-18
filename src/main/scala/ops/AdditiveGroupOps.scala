@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.AdditiveGroup
+import com.alecdorrington.scalgebra.AdditiveGroup
 
 /** Extension methods for [[AdditiveGroup]]. */
 trait AdditiveGroupOps extends DifferenceMonoidOps, AdditiveInverseOps:

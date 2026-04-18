@@ -1,9 +1,9 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered
 
-import com.alecdorrington.structures.MultiplicativeIdentity
-import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeIdentityBuilder
-import com.alecdorrington.structures.ordered.ops.OrderedMultiplicativeIdentityOps
+import com.alecdorrington.scalgebra.MultiplicativeIdentity
+import com.alecdorrington.scalgebra.ordered.builder.OrderedMultiplicativeIdentityBuilder
+import com.alecdorrington.scalgebra.ordered.ops.OrderedMultiplicativeIdentityOps
 
 /** An ordered version of [[MultiplicativeIdentity]]. */
 trait OrderedMultiplicativeIdentity[X]
@@ -12,7 +12,7 @@ trait OrderedMultiplicativeIdentity[X]
 /**
   * The companion object for [[OrderedMultiplicativeIdentity]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.ordered.OrderedMultiplicativeIdentity.{
+  * import com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeIdentity.{
   *   *, given,
   * }
   * ```
@@ -23,7 +23,7 @@ object OrderedMultiplicativeIdentity
   extends OrderedMultiplicativeIdentityBuilder,
           OrderedMultiplicativeIdentityOps:
 
-  export com.alecdorrington.structures.ordered.OrderedMultiplicativeIdentity
+  export com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeIdentity
 
   /**
     * The [[OrderedMultiplicativeIdentity]] instance describing the current

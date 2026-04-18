@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.AdditiveInverse
+import com.alecdorrington.scalgebra.AdditiveInverse
 
 /** Extension methods for [[AdditiveInverse]]. */
 trait AdditiveInverseOps:

@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 
-import com.alecdorrington.structures.builder.MultiplicativeInverseBuilder
-import com.alecdorrington.structures.ops.MultiplicativeInverseOps
+import com.alecdorrington.scalgebra.builder.MultiplicativeInverseBuilder
+import com.alecdorrington.scalgebra.ops.MultiplicativeInverseOps
 
 /** For algebraic structures with a multiplicative inverse. */
 trait MultiplicativeInverse[X]:
@@ -19,14 +19,14 @@ trait MultiplicativeInverse[X]:
 /**
   * The companion object for [[MultiplicativeInverse]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.MultiplicativeInverse.{*, given}
+  * import com.alecdorrington.scalgebra.MultiplicativeInverse.{*, given}
   * ```
   * to receive all necessary syntax for working with multiplicative inverses.
   */
 object MultiplicativeInverse
   extends MultiplicativeInverseBuilder, MultiplicativeInverseOps:
 
-  export com.alecdorrington.structures.MultiplicativeInverse
+  export com.alecdorrington.scalgebra.MultiplicativeInverse
 
   /**
     * The [[MultiplicativeInverse]] instance describing the current algebra

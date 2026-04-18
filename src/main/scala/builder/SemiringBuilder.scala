@@ -1,12 +1,12 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.Semiring
-import com.alecdorrington.structures.evidence.collection.OptionIsSemiring
-import com.alecdorrington.structures.evidence.function.FunctionIsSemiring
-import com.alecdorrington.structures.evidence.future.FutureIsSemiring
-import com.alecdorrington.structures.evidence.tuple.TupleIsSemiring
-import com.alecdorrington.structures.ordered.builder.OrderedSemiringBuilder
+import com.alecdorrington.scalgebra.Semiring
+import com.alecdorrington.scalgebra.evidence.collection.OptionIsSemiring
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsSemiring
+import com.alecdorrington.scalgebra.evidence.future.FutureIsSemiring
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsSemiring
+import com.alecdorrington.scalgebra.ordered.builder.OrderedSemiringBuilder
 
 /** Methods for constructing [[Semiring]] type classes. */
 trait SemiringBuilder

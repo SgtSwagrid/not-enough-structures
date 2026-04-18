@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.EuclideanRing
-import com.alecdorrington.structures.evidence.function.FunctionIsEuclideanRing
-import com.alecdorrington.structures.evidence.future.FutureIsEuclideanRing
-import com.alecdorrington.structures.evidence.tuple.TupleIsEuclideanRing
-import com.alecdorrington.structures.ordered.builder.OrderedEuclideanRingBuilder
+import com.alecdorrington.scalgebra.EuclideanRing
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsEuclideanRing
+import com.alecdorrington.scalgebra.evidence.future.FutureIsEuclideanRing
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsEuclideanRing
+import com.alecdorrington.scalgebra.ordered.builder.OrderedEuclideanRingBuilder
 
 /** Methods for constructing [[EuclideanRing]] type classes. */
 trait EuclideanRingBuilder

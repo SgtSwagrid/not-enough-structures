@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence
 package numeric
 
-import com.alecdorrington.structures.ordered.OrderedEuclideanRing
+import com.alecdorrington.scalgebra.ordered.OrderedEuclideanRing
 
 /**
   * Evidence that [[Short]] forms an [[OrderedEuclideanRing]] under standard

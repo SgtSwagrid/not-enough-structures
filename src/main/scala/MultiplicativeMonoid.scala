@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 
-import com.alecdorrington.structures.builder.MultiplicativeMonoidBuilder
-import com.alecdorrington.structures.ops.MultiplicativeMonoidOps
+import com.alecdorrington.scalgebra.builder.MultiplicativeMonoidBuilder
+import com.alecdorrington.scalgebra.ops.MultiplicativeMonoidOps
 
 /** For algebraic structures with multiplication and an identity. */
 trait MultiplicativeMonoid[X]
@@ -32,14 +32,14 @@ trait MultiplicativeMonoid[X]
 /**
   * The companion object for [[MultiplicativeMonoid]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.MultiplicativeMonoid.{*, given}
+  * import com.alecdorrington.scalgebra.MultiplicativeMonoid.{*, given}
   * ```
   * to receive all necessary syntax for working with multiplicative monoids.
   */
 object MultiplicativeMonoid
   extends MultiplicativeMonoidBuilder, MultiplicativeMonoidOps:
 
-  export com.alecdorrington.structures.MultiplicativeMonoid
+  export com.alecdorrington.scalgebra.MultiplicativeMonoid
 
   /**
     * The [[MultiplicativeMonoid]] instance describing the current algebra

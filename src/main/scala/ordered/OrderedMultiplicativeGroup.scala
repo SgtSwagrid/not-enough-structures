@@ -1,9 +1,9 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered
 
-import com.alecdorrington.structures.MultiplicativeGroup
-import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeGroupBuilder
-import com.alecdorrington.structures.ordered.ops.OrderedMultiplicativeGroupOps
+import com.alecdorrington.scalgebra.MultiplicativeGroup
+import com.alecdorrington.scalgebra.ordered.builder.OrderedMultiplicativeGroupBuilder
+import com.alecdorrington.scalgebra.ordered.ops.OrderedMultiplicativeGroupOps
 
 /** An ordered version of [[MultiplicativeGroup]]. */
 trait OrderedMultiplicativeGroup[X]
@@ -14,7 +14,7 @@ trait OrderedMultiplicativeGroup[X]
 /**
   * The companion object for [[OrderedMultiplicativeGroup]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.ordered.OrderedMultiplicativeGroup.{
+  * import com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeGroup.{
   *   *, given,
   * }
   * ```
@@ -24,7 +24,7 @@ trait OrderedMultiplicativeGroup[X]
 object OrderedMultiplicativeGroup
   extends OrderedMultiplicativeGroupBuilder, OrderedMultiplicativeGroupOps:
 
-  export com.alecdorrington.structures.ordered.OrderedMultiplicativeGroup
+  export com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeGroup
 
   /**
     * The [[OrderedMultiplicativeGroup]] instance describing the current algebra

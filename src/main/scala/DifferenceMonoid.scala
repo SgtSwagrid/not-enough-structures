@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 
-import com.alecdorrington.structures.builder.DifferenceMonoidBuilder
-import com.alecdorrington.structures.ops.DifferenceMonoidOps
+import com.alecdorrington.scalgebra.builder.DifferenceMonoidBuilder
+import com.alecdorrington.scalgebra.ops.DifferenceMonoidOps
 
 /** For algebraic structures with addition and subtraction. */
 trait DifferenceMonoid[X] extends AdditiveMonoid[X]:
@@ -12,13 +12,13 @@ trait DifferenceMonoid[X] extends AdditiveMonoid[X]:
 /**
   * The companion object for [[DifferenceMonoid]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.DifferenceMonoid.{*, given}
+  * import com.alecdorrington.scalgebra.DifferenceMonoid.{*, given}
   * ```
   * to receive all necessary syntax for working with difference monoids.
   */
 object DifferenceMonoid extends DifferenceMonoidBuilder, DifferenceMonoidOps:
 
-  export com.alecdorrington.structures.DifferenceMonoid
+  export com.alecdorrington.scalgebra.DifferenceMonoid
 
   /** The [[DifferenceMonoid]] instance describing the current algebra system. */
   inline def differenceMonoid[X : DifferenceMonoid as differenceMonoid]

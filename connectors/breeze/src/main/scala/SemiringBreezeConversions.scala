@@ -1,6 +1,6 @@
-package com.alecdorrington.structures.connector.breeze
+package com.alecdorrington.scalgebra.connector.breeze
 
-import com.alecdorrington.structures
+import com.alecdorrington.scalgebra
 import breeze.math
 
 /**

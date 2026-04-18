@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.EuclideanMonoid
-import com.alecdorrington.structures.evidence.function.FunctionIsEuclideanMonoid
-import com.alecdorrington.structures.evidence.future.FutureIsEuclideanMonoid
-import com.alecdorrington.structures.evidence.tuple.TupleIsEuclideanMonoid
-import com.alecdorrington.structures.ordered.builder.OrderedEuclideanMonoidBuilder
+import com.alecdorrington.scalgebra.EuclideanMonoid
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsEuclideanMonoid
+import com.alecdorrington.scalgebra.evidence.future.FutureIsEuclideanMonoid
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsEuclideanMonoid
+import com.alecdorrington.scalgebra.ordered.builder.OrderedEuclideanMonoidBuilder
 
 /** Methods for constructing [[EuclideanMonoid]] type classes. */
 trait EuclideanMonoidBuilder

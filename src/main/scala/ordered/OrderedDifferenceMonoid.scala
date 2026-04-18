@@ -1,9 +1,9 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered
 
-import com.alecdorrington.structures.DifferenceMonoid
-import com.alecdorrington.structures.ordered.builder.OrderedDifferenceMonoidBuilder
-import com.alecdorrington.structures.ordered.ops.OrderedDifferenceMonoidOps
+import com.alecdorrington.scalgebra.DifferenceMonoid
+import com.alecdorrington.scalgebra.ordered.builder.OrderedDifferenceMonoidBuilder
+import com.alecdorrington.scalgebra.ordered.ops.OrderedDifferenceMonoidOps
 
 /** An ordered version of [[DifferenceMonoid]]. */
 trait OrderedDifferenceMonoid[X]
@@ -12,7 +12,7 @@ trait OrderedDifferenceMonoid[X]
 /**
   * The companion object for [[OrderedDifferenceMonoid]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.ordered.OrderedDifferenceMonoid.{
+  * import com.alecdorrington.scalgebra.ordered.OrderedDifferenceMonoid.{
   *   *, given,
   * }
   * ```
@@ -21,7 +21,7 @@ trait OrderedDifferenceMonoid[X]
 object OrderedDifferenceMonoid
   extends OrderedDifferenceMonoidBuilder, OrderedDifferenceMonoidOps:
 
-  export com.alecdorrington.structures.ordered.OrderedDifferenceMonoid
+  export com.alecdorrington.scalgebra.ordered.OrderedDifferenceMonoid
 
   /**
     * The [[OrderedDifferenceMonoid]] instance describing the current algebra

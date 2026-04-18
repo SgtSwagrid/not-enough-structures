@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.Field
+import com.alecdorrington.scalgebra.Field
 
 /** Extension methods for [[Field]]. */
 trait FieldOps extends EuclideanRingOps, MultiplicativeGroupOps

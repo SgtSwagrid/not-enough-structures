@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 
-import com.alecdorrington.structures.builder.AdditiveMonoidBuilder
-import com.alecdorrington.structures.ops.AdditiveMonoidOps
+import com.alecdorrington.scalgebra.builder.AdditiveMonoidBuilder
+import com.alecdorrington.scalgebra.ops.AdditiveMonoidOps
 
 /** For algebraic structures with addition and an identity. */
 trait AdditiveMonoid[X] extends AdditiveSemigroup[X], AdditiveIdentity[X]:
@@ -30,13 +30,13 @@ trait AdditiveMonoid[X] extends AdditiveSemigroup[X], AdditiveIdentity[X]:
 /**
   * The companion object for [[AdditiveMonoid]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.AdditiveMonoid.{*, given}
+  * import com.alecdorrington.scalgebra.AdditiveMonoid.{*, given}
   * ```
   * to receive all necessary syntax for working with additive monoids.
   */
 object AdditiveMonoid extends AdditiveMonoidBuilder, AdditiveMonoidOps:
 
-  export com.alecdorrington.structures.AdditiveMonoid
+  export com.alecdorrington.scalgebra.AdditiveMonoid
 
   /** The [[AdditiveMonoid]] instance describing the current algebra system. */
   inline def additiveMonoid[X : AdditiveMonoid as additiveMonoid]

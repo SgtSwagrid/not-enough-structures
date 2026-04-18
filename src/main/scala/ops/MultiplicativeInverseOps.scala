@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.MultiplicativeInverse
+import com.alecdorrington.scalgebra.MultiplicativeInverse
 
 /** Extension methods for [[MultiplicativeInverse]]. */
 trait MultiplicativeInverseOps:

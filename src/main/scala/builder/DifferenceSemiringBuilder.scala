@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.DifferenceSemiring
-import com.alecdorrington.structures.evidence.function.FunctionIsDifferenceSemiring
-import com.alecdorrington.structures.evidence.future.FutureIsDifferenceSemiring
-import com.alecdorrington.structures.evidence.tuple.TupleIsDifferenceSemiring
-import com.alecdorrington.structures.ordered.builder.OrderedDifferenceSemiringBuilder
+import com.alecdorrington.scalgebra.DifferenceSemiring
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsDifferenceSemiring
+import com.alecdorrington.scalgebra.evidence.future.FutureIsDifferenceSemiring
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsDifferenceSemiring
+import com.alecdorrington.scalgebra.ordered.builder.OrderedDifferenceSemiringBuilder
 
 /** Methods for constructing [[DifferenceSemiring]] type classes. */
 trait DifferenceSemiringBuilder

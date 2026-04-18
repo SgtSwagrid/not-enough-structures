@@ -1,4 +1,4 @@
-## com.alecdorrington.structures.evidence
+## com.alecdorrington.scalgebra.evidence
 
 This package contains evidence that assorted in-built types conform
 to the requirements of the provided algebraic structures.

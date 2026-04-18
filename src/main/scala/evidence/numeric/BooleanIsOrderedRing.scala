@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence
 package numeric
 
-import com.alecdorrington.structures.ordered.OrderedRing
+import com.alecdorrington.scalgebra.ordered.OrderedRing
 
 /**
   * Evidence that [[Boolean]] forms an [[OrderedRing]] over `GF(2)`, with `XOR`

@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 
-import com.alecdorrington.structures.builder.AdditiveInverseBuilder
-import com.alecdorrington.structures.ops.AdditiveInverseOps
+import com.alecdorrington.scalgebra.builder.AdditiveInverseBuilder
+import com.alecdorrington.scalgebra.ops.AdditiveInverseOps
 
 /** For algebraic structures with an additive inverse. */
 trait AdditiveInverse[X]:
@@ -17,13 +17,13 @@ trait AdditiveInverse[X]:
 /**
   * The companion object for [[AdditiveInverse]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.AdditiveInverse.{*, given}
+  * import com.alecdorrington.scalgebra.AdditiveInverse.{*, given}
   * ```
   * to receive all necessary syntax for working with additive inverses.
   */
 object AdditiveInverse extends AdditiveInverseBuilder, AdditiveInverseOps:
 
-  export com.alecdorrington.structures.AdditiveInverse
+  export com.alecdorrington.scalgebra.AdditiveInverse
 
   /** The [[AdditiveInverse]] instance describing the current algebra system. */
   inline def additiveInverse[X : AdditiveInverse as additiveInverse]

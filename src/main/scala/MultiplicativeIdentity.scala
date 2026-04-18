@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 
-import com.alecdorrington.structures.builder.MultiplicativeIdentityBuilder
-import com.alecdorrington.structures.ops.MultiplicativeIdentityOps
+import com.alecdorrington.scalgebra.builder.MultiplicativeIdentityBuilder
+import com.alecdorrington.scalgebra.ops.MultiplicativeIdentityOps
 
 /** For algebraic structures with a multiplicative identity (`one`). */
 trait MultiplicativeIdentity[+X]:
@@ -19,14 +19,14 @@ trait MultiplicativeIdentity[+X]:
 /**
   * The companion object for [[MultiplicativeIdentity]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.One.{*, given}
+  * import com.alecdorrington.scalgebra.One.{*, given}
   * ```
   * to receive all necessary syntax for working with one.
   */
 object MultiplicativeIdentity
   extends MultiplicativeIdentityBuilder, MultiplicativeIdentityOps:
 
-  export com.alecdorrington.structures.MultiplicativeIdentity
+  export com.alecdorrington.scalgebra.MultiplicativeIdentity
 
   /**
     * The [[MultiplicativeIdentity]] instance describing the current algebra

@@ -1,6 +1,6 @@
-package com.alecdorrington.structures.connector.zioprelude
+package com.alecdorrington.scalgebra.connector.zioprelude
 
-import com.alecdorrington.structures
+import com.alecdorrington.scalgebra
 
 /**
   * Implicit conversions between [[structures.AdditiveMonoid]] and

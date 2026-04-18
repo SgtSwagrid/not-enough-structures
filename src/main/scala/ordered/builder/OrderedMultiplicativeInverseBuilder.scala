@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedMultiplicativeInverse
-import com.alecdorrington.structures.ordered.OrderedMultiplicativeInverse
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedMultiplicativeInverse
+import com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeInverse
 
 /** Methods for constructing [[OrderedMultiplicativeInverse]] type classes. */
 trait OrderedMultiplicativeInverseBuilder

@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.evidence.collection.{
+import com.alecdorrington.scalgebra.evidence.collection.{
   ArrayIsAdditiveMonoid, ArraySeqIsAdditiveMonoid, EitherIsAdditiveMonoid,
   IArrayIsAdditiveMonoid, LazyListIsAdditiveMonoid, ListIsAdditiveMonoid,
   MapIsAdditiveMonoid, OptionIsAdditiveMonoid, QueueIsAdditiveMonoid,
@@ -9,10 +9,10 @@ import com.alecdorrington.structures.evidence.collection.{
   SortedSetIsAdditiveMonoid, StringIsAdditiveMonoid, TryIsAdditiveMonoid,
   VectorIsAdditiveMonoid,
 }
-import com.alecdorrington.structures.evidence.function.FunctionIsAdditiveMonoid
-import com.alecdorrington.structures.evidence.future.FutureIsAdditiveMonoid
-import com.alecdorrington.structures.evidence.tuple.TupleIsAdditiveMonoid
-import com.alecdorrington.structures.ordered.builder.OrderedAdditiveMonoidBuilder
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsAdditiveMonoid
+import com.alecdorrington.scalgebra.evidence.future.FutureIsAdditiveMonoid
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsAdditiveMonoid
+import com.alecdorrington.scalgebra.ordered.builder.OrderedAdditiveMonoidBuilder
 
 /** Methods for constructing [[AdditiveMonoid]] type classes. */
 trait AdditiveMonoidBuilder

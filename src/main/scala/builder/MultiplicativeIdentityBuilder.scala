@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.MultiplicativeIdentity
-import com.alecdorrington.structures.evidence.function.FunctionIsMultiplicativeIdentity
-import com.alecdorrington.structures.evidence.future.FutureIsMultiplicativeIdentity
-import com.alecdorrington.structures.evidence.tuple.TupleIsMultiplicativeIdentity
-import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeIdentityBuilder
+import com.alecdorrington.scalgebra.MultiplicativeIdentity
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsMultiplicativeIdentity
+import com.alecdorrington.scalgebra.evidence.future.FutureIsMultiplicativeIdentity
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsMultiplicativeIdentity
+import com.alecdorrington.scalgebra.ordered.builder.OrderedMultiplicativeIdentityBuilder
 
 /** Methods for constructing [[MultiplicativeIdentity]] type classes. */
 trait MultiplicativeIdentityBuilder

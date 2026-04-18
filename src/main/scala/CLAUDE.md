@@ -7,7 +7,7 @@ It is not intended for human eyes.
 
 - Read the [README.md](README.md) from this package before proceeding,
   in addition to those of the subpackages [builder](builder/README.md) and [ops](ops/README.md).
-- This package contains type classes for algebraic com.alecdorrington.structures.
+- This package contains type classes for algebraic com.alecdorrington.scalgebra.
 - Take care to ensure inheritance relations are followed in the correct direction.
   These are subtle and can be counterintuitive.
 - In particular, note that inheritance is _covariant_ for the type classes and [ops](ops), but _contravariant_ for [builder](builder).

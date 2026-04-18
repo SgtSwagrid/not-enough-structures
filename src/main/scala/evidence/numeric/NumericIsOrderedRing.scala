@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence
 package numeric
 
-import com.alecdorrington.structures.ordered.OrderedRing
+import com.alecdorrington.scalgebra.ordered.OrderedRing
 
 /**
   * Evidence that any type with a [[scala.math.Numeric]] instance forms an

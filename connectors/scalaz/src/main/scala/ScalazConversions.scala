@@ -1,11 +1,11 @@
-package com.alecdorrington.structures.connector.scalaz
+package com.alecdorrington.scalgebra.connector.scalaz
 
 /**
   * Introduces compatibility between "Scalaz" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import com.alecdorrington.structures.connector.scalaz.ScalazConversions.given
+  * import com.alecdorrington.scalgebra.connector.scalaz.ScalazConversions.given
   * ```
   *
   * @note

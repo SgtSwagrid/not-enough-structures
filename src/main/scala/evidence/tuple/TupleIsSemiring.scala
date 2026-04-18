@@ -1,4 +1,4 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence.tuple
 
 /**

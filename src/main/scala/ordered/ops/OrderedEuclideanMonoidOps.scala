@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.ops
 
-import com.alecdorrington.structures.ops.EuclideanMonoidOps
-import com.alecdorrington.structures.ordered.OrderedEuclideanMonoid
+import com.alecdorrington.scalgebra.ops.EuclideanMonoidOps
+import com.alecdorrington.scalgebra.ordered.OrderedEuclideanMonoid
 
 /** Extension methods for [[OrderedEuclideanMonoid]]. */
 trait OrderedEuclideanMonoidOps

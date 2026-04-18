@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.Field
-import com.alecdorrington.structures.evidence.function.FunctionIsField
-import com.alecdorrington.structures.evidence.future.FutureIsField
-import com.alecdorrington.structures.evidence.tuple.TupleIsField
-import com.alecdorrington.structures.ordered.builder.OrderedFieldBuilder
+import com.alecdorrington.scalgebra.Field
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsField
+import com.alecdorrington.scalgebra.evidence.future.FutureIsField
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsField
+import com.alecdorrington.scalgebra.ordered.builder.OrderedFieldBuilder
 
 /** Methods for constructing [[Field]] type classes. */
 trait FieldBuilder

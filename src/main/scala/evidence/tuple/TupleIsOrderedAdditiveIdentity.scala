@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence.tuple
 
-import com.alecdorrington.structures.ordered.OrderedAdditiveIdentity
+import com.alecdorrington.scalgebra.ordered.OrderedAdditiveIdentity
 
 /**
   * Evidence that tuples of any arity up to 6 have an

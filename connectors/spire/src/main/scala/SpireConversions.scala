@@ -1,11 +1,11 @@
-package com.alecdorrington.structures.connector.spire
+package com.alecdorrington.scalgebra.connector.spire
 
 /**
   * Introduces compatibility between "Spire" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import com.alecdorrington.structures.connector.spire.SpireConversions.given
+  * import com.alecdorrington.scalgebra.connector.spire.SpireConversions.given
   * ```
   */
 object SpireConversions

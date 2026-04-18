@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.DifferenceMonoid
+import com.alecdorrington.scalgebra.DifferenceMonoid
 
 /** Extension methods for [[DifferenceMonoid]]. */
 trait DifferenceMonoidOps extends AdditiveMonoidOps:

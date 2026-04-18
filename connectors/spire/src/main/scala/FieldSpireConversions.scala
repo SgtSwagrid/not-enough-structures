@@ -1,6 +1,6 @@
-package com.alecdorrington.structures.connector.spire
+package com.alecdorrington.scalgebra.connector.spire
 
-import com.alecdorrington.structures
+import com.alecdorrington.scalgebra
 import spire.algebra
 
 /**

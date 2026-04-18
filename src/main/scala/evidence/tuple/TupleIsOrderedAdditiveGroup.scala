@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence.tuple
 
-import com.alecdorrington.structures.ordered.OrderedAdditiveGroup
+import com.alecdorrington.scalgebra.ordered.OrderedAdditiveGroup
 
 /**
   * Evidence that tuples of any arity up to 6 form an [[OrderedAdditiveGroup]]

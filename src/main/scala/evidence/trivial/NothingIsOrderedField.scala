@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence
 package trivial
 
-import com.alecdorrington.structures.ordered.OrderedField
+import com.alecdorrington.scalgebra.ordered.OrderedField
 
 /**
   * Evidence that [[Nothing]] forms an [[OrderedField]] vacuously, as no values

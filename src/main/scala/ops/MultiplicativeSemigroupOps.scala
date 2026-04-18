@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.MultiplicativeSemigroup
+import com.alecdorrington.scalgebra.MultiplicativeSemigroup
 
 /** Extension methods for [[MultiplicativeSemigroup]]. */
 trait MultiplicativeSemigroupOps:

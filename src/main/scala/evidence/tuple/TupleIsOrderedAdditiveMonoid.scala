@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence.tuple
 
-import com.alecdorrington.structures.ordered.OrderedAdditiveMonoid
+import com.alecdorrington.scalgebra.ordered.OrderedAdditiveMonoid
 
 /**
   * Evidence that tuples of any arity up to 6 form an [[OrderedAdditiveMonoid]]

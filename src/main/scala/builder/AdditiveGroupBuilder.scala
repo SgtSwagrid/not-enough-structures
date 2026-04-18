@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.AdditiveGroup
-import com.alecdorrington.structures.evidence.function.FunctionIsAdditiveGroup
-import com.alecdorrington.structures.evidence.future.FutureIsAdditiveGroup
-import com.alecdorrington.structures.evidence.tuple.TupleIsAdditiveGroup
-import com.alecdorrington.structures.ordered.builder.OrderedAdditiveGroupBuilder
+import com.alecdorrington.scalgebra.AdditiveGroup
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsAdditiveGroup
+import com.alecdorrington.scalgebra.evidence.future.FutureIsAdditiveGroup
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsAdditiveGroup
+import com.alecdorrington.scalgebra.ordered.builder.OrderedAdditiveGroupBuilder
 
 /** Methods for constructing [[AdditiveGroup]] type classes. */
 trait AdditiveGroupBuilder

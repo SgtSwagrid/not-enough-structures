@@ -1,9 +1,9 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered
 
-import com.alecdorrington.structures.AdditiveSemigroup
-import com.alecdorrington.structures.ordered.builder.OrderedAdditiveSemigroupBuilder
-import com.alecdorrington.structures.ordered.ops.OrderedAdditiveSemigroupOps
+import com.alecdorrington.scalgebra.AdditiveSemigroup
+import com.alecdorrington.scalgebra.ordered.builder.OrderedAdditiveSemigroupBuilder
+import com.alecdorrington.scalgebra.ordered.ops.OrderedAdditiveSemigroupOps
 
 /** An ordered version of [[AdditiveSemigroup]]. */
 trait OrderedAdditiveSemigroup[X] extends AdditiveSemigroup[X], Ordering[X]
@@ -11,7 +11,7 @@ trait OrderedAdditiveSemigroup[X] extends AdditiveSemigroup[X], Ordering[X]
 /**
   * The companion object for [[OrderedAdditiveSemigroup]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.ordered.OrderedAdditiveSemigroup.{
+  * import com.alecdorrington.scalgebra.ordered.OrderedAdditiveSemigroup.{
   *   *, given,
   * }
   * ```
@@ -21,7 +21,7 @@ trait OrderedAdditiveSemigroup[X] extends AdditiveSemigroup[X], Ordering[X]
 object OrderedAdditiveSemigroup
   extends OrderedAdditiveSemigroupBuilder, OrderedAdditiveSemigroupOps:
 
-  export com.alecdorrington.structures.ordered.OrderedAdditiveSemigroup
+  export com.alecdorrington.scalgebra.ordered.OrderedAdditiveSemigroup
 
   /**
     * The [[OrderedAdditiveSemigroup]] instance describing the current algebra

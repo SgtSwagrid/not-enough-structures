@@ -1,25 +1,25 @@
 <div align="center">
 
-  <h1>🌀 Not Enough Structures</h1>
+  <h1>🌀 Scalgebra</h1>
   <p>A fine-grained collection of algebraic type classes for Scala 3 library authors.</p>
   
   <span>
-    <a href="https://github.com/SgtSwagrid/not-enough-structures/actions/workflows/build-integrity.yml"><img src="https://github.com/SgtSwagrid/not-enough-structures/actions/workflows/build-integrity.yml/badge.svg" alt="Build status" /></a>
-    <a href="https://search.maven.org/artifact/com.alecdorrington/not-enough-structures_3"><img src="https://img.shields.io/maven-central/v/com.alecdorrington/not-enough-structures_3.svg" alt="Maven Central" /></a>
+    <a href="https://github.com/SgtSwagrid/scalgebra/actions/workflows/build-integrity.yml"><img src="https://github.com/SgtSwagrid/scalgebra/actions/workflows/build-integrity.yml/badge.svg" alt="Build status" /></a>
+    <a href="https://search.maven.org/artifact/com.alecdorrington/scalgebra_3"><img src="https://img.shields.io/maven-central/v/com.alecdorrington/scalgebra_3.svg" alt="Maven Central" /></a>
   </span>
   
 </div>
 
 ## 💡 Overview
 
-**Not Enough Structures** provides a hierarchy of type classes for algebraic structures: semigroups, monoids, groups, rings, fields, and more, split cleanly along additive and multiplicative lines.
+**Scalgebra** provides a hierarchy of type classes for algebraic structures: semigroups, monoids, groups, rings, fields, and more, split cleanly along additive and multiplicative lines.
 
 It is aimed at **library designers** rather than end users. If you are writing a generic algorithm and want to express the minimal algebraic requirements on your type parameters, rather than demanding an all-or-nothing `Numeric`. This library gives you the tools to do so.
 
 ### Example
 
 ```scala 3
-import com.alecdorrington.structures.Ring.{*, given}
+import com.alecdorrington.scalgebra.Ring.{*, given}
 
 // Only requires addition, negation, and multiplication (not division).
 def dot[X : Ring](xs: Seq[X], ys: Seq[X]): X =
@@ -33,7 +33,7 @@ Your users can then call `dot` on any type for which a `Ring` is in scope, inclu
 Add the following dependency to your `build.sbt`:
 
 ```scala
-libraryDependencies += "com.alecdorrington" %% "not-enough-structures" % "0.1.4"
+libraryDependencies += "com.alecdorrington" %% "scalgebra" % "0.1.4"
 ```
 
 Requires Scala 3.
@@ -57,13 +57,13 @@ def double[X : AdditiveSemigroup](x: X): X = x + x
 Each type class exposes all necessary syntax through its companion object. Import it with:
 
 ```scala 3
-import com.alecdorrington.structures.<TypeClass>.{*, given}
+import com.alecdorrington.scalgebra.<TypeClass>.{*, given}
 ```
 
 You only need one import regardless of how many capabilities the type class bundles.
 
 ```scala 3
-import com.alecdorrington.structures.EuclideanRing.{*, given}
+import com.alecdorrington.scalgebra.EuclideanRing.{*, given}
 
 def gcdNorm[X : EuclideanRing as E](xs: Seq[X]): X =
   xs.reduce(E.gcd)  // gcd, +, -, *, /, % all available
@@ -74,7 +74,7 @@ def gcdNorm[X : EuclideanRing as E](xs: Seq[X]): X =
 To make your own type work with these type classes, provide a `given` instance:
 
 ```scala 3
-import com.alecdorrington.structures.AdditiveMonoid
+import com.alecdorrington.scalgebra.AdditiveMonoid
 
 case class Vec2(x: Double, y: Double)
 
@@ -90,7 +90,7 @@ For in-built types (`Int`, `Double`, etc.), evidence is already included; see [b
 The `ordered` subpackage provides `Ordered`-prefixed variants that combine each type class with `Ordering[X]`. Use these when your algorithm needs both algebraic operations and comparisons under a single context bound.
 
 ```scala 3
-import com.alecdorrington.structures.ordered.OrderedField.{*, given}
+import com.alecdorrington.scalgebra.ordered.OrderedField.{*, given}
 
 def clamp[X : OrderedField](x: X, lb: X, ub: X): X = x.clamp(lb, ub)
 ```
@@ -99,23 +99,23 @@ The ordered variants go beyond merely combining their unordered counterpart with
 
 ## 🔌 Connectors
 
-_Not Enough Structures_ provides, as separate dependencies, connectors to all major abstract algebra libraries in the Scala ecosystem.
+_Scalgebra_ provides, as separate dependencies, connectors to all major abstract algebra libraries in the Scala ecosystem.
 These provide automatic conversion between the algebraic type classes found here and those from each of the other libraries, where equivalents exist.
 Conversions are provided in both directions.
 
 ### Usage
 
 Each connector is published under the name
-`not-enough-structures-connector-<library-name>`
+`scalgebra-connector-<library-name>`
 and can be installed using:
 ```scala
-libraryDependencies += "com.alecdorrington" %% "not-enough-structures-connector-<library-name>" % "0.1.4"
+libraryDependencies += "com.alecdorrington" %% "scalgebra-connector-<library-name>" % "0.1.4"
 ```
-The version of the connector always matches the version of the core _Not Enough Structures_ library.
+The version of the connector always matches the version of the core _Scalgebra_ library.
 
 The following import statement will then load all relevant conversions:
 ```scala
-import com.alecdorrington.structures.connector.<libraryname>.<LibraryName>Conversions.given
+import com.alecdorrington.scalgebra.connector.<libraryname>.<LibraryName>Conversions.given
 ```
 
 This could even be used to convert between algebra systems from multiple foreign libraries,
@@ -132,7 +132,7 @@ with no intention to ever use the intermediates that exist here.
 
 ## 📐 Type class reference
 
-The complete hierarchy is shown below. Each trait is in the package `com.alecdorrington.structures`.
+The complete hierarchy is shown below. Each trait is in the package `com.alecdorrington.scalgebra`.
 
 ### Component traits
 
@@ -230,7 +230,7 @@ Cats treats addition and multiplication as the same abstract operation, with no 
 
 ### Algebra (typelevel/algebra / cats-algebra)
 
-Originally a standalone attempt to unify the algebraic type classes from Spire and Algebird, algebra is now maintained as the `algebra-core` subproject of Cats. It provides `Ring`, `Field`, `EuclideanRing`, and an additive/multiplicative split, and depends only on `cats-kernel`. It targets Scala 2 and 3. Not Enough Structures is a Scala 3-native alternative in the same spirit: a self-contained algebraic-structure layer with no dependencies to speak of.
+Originally a standalone attempt to unify the algebraic type classes from Spire and Algebird, algebra is now maintained as the `algebra-core` subproject of Cats. It provides `Ring`, `Field`, `EuclideanRing`, and an additive/multiplicative split, and depends only on `cats-kernel`. It targets Scala 2 and 3. Scalgebra is a Scala 3-native alternative in the same spirit: a self-contained algebraic-structure layer with no dependencies to speak of.
 
 ### Algebird (twitter/algebird)
 

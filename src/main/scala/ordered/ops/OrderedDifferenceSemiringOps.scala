@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.ops
 
-import com.alecdorrington.structures.ops.DifferenceSemiringOps
-import com.alecdorrington.structures.ordered.OrderedDifferenceSemiring
+import com.alecdorrington.scalgebra.ops.DifferenceSemiringOps
+import com.alecdorrington.scalgebra.ordered.OrderedDifferenceSemiring
 
 /** Extension methods for [[OrderedDifferenceSemiring]]. */
 trait OrderedDifferenceSemiringOps

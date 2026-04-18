@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 
-import com.alecdorrington.structures.builder.EuclideanRingBuilder
-import com.alecdorrington.structures.ops.EuclideanRingOps
+import com.alecdorrington.scalgebra.builder.EuclideanRingBuilder
+import com.alecdorrington.scalgebra.ops.EuclideanRingOps
 import scala.annotation.tailrec
 
 /** For algebraic structures with addition, multiplication, and division. */
@@ -22,13 +22,13 @@ trait EuclideanRing[X] extends Ring[X], EuclideanMonoid[X]:
 /**
   * The companion object for [[EuclideanRing]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.EuclideanRing.{*, given}
+  * import com.alecdorrington.scalgebra.EuclideanRing.{*, given}
   * ```
   * to receive all necessary syntax for working with Euclidean rings.
   */
 object EuclideanRing extends EuclideanRingBuilder, EuclideanRingOps:
 
-  export com.alecdorrington.structures.EuclideanRing
+  export com.alecdorrington.scalgebra.EuclideanRing
 
   /** The [[EuclideanRing]] instance describing the current algebra system. */
   inline def euclideanRing[X : EuclideanRing as euclideanRing]

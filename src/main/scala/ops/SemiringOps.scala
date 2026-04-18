@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.Semiring
+import com.alecdorrington.scalgebra.Semiring
 
 /** Extension methods for [[Semiring]]. */
 trait SemiringOps extends AdditiveMonoidOps, MultiplicativeMonoidOps:

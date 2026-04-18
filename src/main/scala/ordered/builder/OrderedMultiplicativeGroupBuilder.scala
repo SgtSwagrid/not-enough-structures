@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedMultiplicativeGroup
-import com.alecdorrington.structures.ordered.OrderedMultiplicativeGroup
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedMultiplicativeGroup
+import com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeGroup
 
 /** Methods for constructing [[OrderedMultiplicativeGroup]] type classes. */
 trait OrderedMultiplicativeGroupBuilder

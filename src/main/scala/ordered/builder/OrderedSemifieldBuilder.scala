@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedSemifield
-import com.alecdorrington.structures.ordered.OrderedSemifield
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedSemifield
+import com.alecdorrington.scalgebra.ordered.OrderedSemifield
 
 /** Methods for constructing [[OrderedSemifield]] type classes. */
 trait OrderedSemifieldBuilder

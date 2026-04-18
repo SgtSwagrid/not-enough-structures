@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.MultiplicativeGroup
-import com.alecdorrington.structures.evidence.function.FunctionIsMultiplicativeGroup
-import com.alecdorrington.structures.evidence.future.FutureIsMultiplicativeGroup
-import com.alecdorrington.structures.evidence.tuple.TupleIsMultiplicativeGroup
-import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeGroupBuilder
+import com.alecdorrington.scalgebra.MultiplicativeGroup
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsMultiplicativeGroup
+import com.alecdorrington.scalgebra.evidence.future.FutureIsMultiplicativeGroup
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsMultiplicativeGroup
+import com.alecdorrington.scalgebra.ordered.builder.OrderedMultiplicativeGroupBuilder
 
 /** Methods for constructing [[MultiplicativeGroup]] type classes. */
 trait MultiplicativeGroupBuilder

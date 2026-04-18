@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence.tuple
 
-import com.alecdorrington.structures.ordered.OrderedAdditiveInverse
+import com.alecdorrington.scalgebra.ordered.OrderedAdditiveInverse
 
 /**
   * Evidence that tuples of any arity up to 6 have an [[OrderedAdditiveInverse]]

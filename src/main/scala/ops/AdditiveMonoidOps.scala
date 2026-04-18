@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.AdditiveMonoid
+import com.alecdorrington.scalgebra.AdditiveMonoid
 
 /** Extension methods for [[AdditiveMonoid]]. */
 trait AdditiveMonoidOps extends AdditiveSemigroupOps, AdditiveIdentityOps:

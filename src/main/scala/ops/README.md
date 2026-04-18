@@ -1,4 +1,4 @@
-## com.alecdorrington.structures.ops
+## com.alecdorrington.scalgebra.ops
 
 This package contains _operators_ for members of algebraic types.
 There is exactly one operators trait for each base trait in the parent directory.
@@ -14,7 +14,7 @@ Everything contained here is available there.
 For any structure, e.g. `Ring`, use the following import statement
 to receive all necessary syntax for working with that structure:
 ```scala 3
-import com.alecdorrington.structures.<Structure>.{*, given}
+import com.alecdorrington.scalgebra.<Structure>.{*, given}
 ```
 
 ### Inheritance structure

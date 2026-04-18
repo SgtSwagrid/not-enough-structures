@@ -1,9 +1,9 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered
 
-import com.alecdorrington.structures.MultiplicativeMonoid
-import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeMonoidBuilder
-import com.alecdorrington.structures.ordered.ops.OrderedMultiplicativeMonoidOps
+import com.alecdorrington.scalgebra.MultiplicativeMonoid
+import com.alecdorrington.scalgebra.ordered.builder.OrderedMultiplicativeMonoidBuilder
+import com.alecdorrington.scalgebra.ordered.ops.OrderedMultiplicativeMonoidOps
 
 /** An ordered version of [[MultiplicativeMonoid]]. */
 trait OrderedMultiplicativeMonoid[X]
@@ -14,7 +14,7 @@ trait OrderedMultiplicativeMonoid[X]
 /**
   * The companion object for [[OrderedMultiplicativeMonoid]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.ordered.OrderedMultiplicativeMonoid.{
+  * import com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeMonoid.{
   *   *, given,
   * }
   * ```
@@ -24,7 +24,7 @@ trait OrderedMultiplicativeMonoid[X]
 object OrderedMultiplicativeMonoid
   extends OrderedMultiplicativeMonoidBuilder, OrderedMultiplicativeMonoidOps:
 
-  export com.alecdorrington.structures.ordered.OrderedMultiplicativeMonoid
+  export com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeMonoid
 
   /**
     * The [[OrderedMultiplicativeMonoid]] instance describing the current

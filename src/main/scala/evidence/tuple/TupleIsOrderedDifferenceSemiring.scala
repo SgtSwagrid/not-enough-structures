@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence.tuple
 
-import com.alecdorrington.structures.ordered.OrderedDifferenceSemiring
+import com.alecdorrington.scalgebra.ordered.OrderedDifferenceSemiring
 
 /**
   * Evidence that tuples of any arity up to 6 form an

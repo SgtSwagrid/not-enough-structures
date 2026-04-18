@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.ops
 
-import com.alecdorrington.structures.ops.MultiplicativeMonoidOps
-import com.alecdorrington.structures.ordered.OrderedMultiplicativeMonoid
+import com.alecdorrington.scalgebra.ops.MultiplicativeMonoidOps
+import com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeMonoid
 
 /** Extension methods for [[OrderedMultiplicativeMonoid]]. */
 trait OrderedMultiplicativeMonoidOps

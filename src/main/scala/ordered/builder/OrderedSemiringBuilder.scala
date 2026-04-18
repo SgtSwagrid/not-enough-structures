@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedSemiring
-import com.alecdorrington.structures.ordered.OrderedSemiring
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedSemiring
+import com.alecdorrington.scalgebra.ordered.OrderedSemiring
 
 /** Methods for constructing [[OrderedSemiring]] type classes. */
 trait OrderedSemiringBuilder

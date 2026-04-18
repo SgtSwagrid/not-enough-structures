@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.MultiplicativeMonoid
+import com.alecdorrington.scalgebra.MultiplicativeMonoid
 
 /** Extension methods for [[MultiplicativeMonoid]]. */
 trait MultiplicativeMonoidOps

@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedAdditiveMonoid
-import com.alecdorrington.structures.ordered.OrderedAdditiveMonoid
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedAdditiveMonoid
+import com.alecdorrington.scalgebra.ordered.OrderedAdditiveMonoid
 
 /** Methods for constructing [[OrderedAdditiveMonoid]] type classes. */
 trait OrderedAdditiveMonoidBuilder

@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.EuclideanMonoid
+import com.alecdorrington.scalgebra.EuclideanMonoid
 
 /** Extension methods for [[EuclideanMonoid]]. */
 trait EuclideanMonoidOps extends MultiplicativeMonoidOps:

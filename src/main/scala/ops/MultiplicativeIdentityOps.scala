@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.MultiplicativeIdentity
+import com.alecdorrington.scalgebra.MultiplicativeIdentity
 
 /** Extension methods for [[MultiplicativeIdentity]]. */
 trait MultiplicativeIdentityOps:

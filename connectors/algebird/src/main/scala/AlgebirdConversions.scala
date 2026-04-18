@@ -1,11 +1,11 @@
-package com.alecdorrington.structures.connector.algebird
+package com.alecdorrington.scalgebra.connector.algebird
 
 /**
   * Introduces compatibility between "Algebird" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import com.alecdorrington.structures.connector.cats.CatsConversions.given
+  * import com.alecdorrington.scalgebra.connector.cats.CatsConversions.given
   * ```
   */
 object AlgebirdConversions

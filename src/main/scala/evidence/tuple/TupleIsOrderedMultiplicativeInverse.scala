@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence.tuple
 
-import com.alecdorrington.structures.ordered.OrderedMultiplicativeInverse
+import com.alecdorrington.scalgebra.ordered.OrderedMultiplicativeInverse
 
 /**
   * Evidence that tuples of arity 0 and 1 have an

@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.AdditiveIdentity
+import com.alecdorrington.scalgebra.AdditiveIdentity
 
 /** Extension methods for [[AdditiveIdentity]]. */
 trait AdditiveIdentityOps:

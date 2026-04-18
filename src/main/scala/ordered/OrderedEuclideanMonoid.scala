@@ -1,9 +1,9 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered
 
-import com.alecdorrington.structures.EuclideanMonoid
-import com.alecdorrington.structures.ordered.builder.OrderedEuclideanMonoidBuilder
-import com.alecdorrington.structures.ordered.ops.OrderedEuclideanMonoidOps
+import com.alecdorrington.scalgebra.EuclideanMonoid
+import com.alecdorrington.scalgebra.ordered.builder.OrderedEuclideanMonoidBuilder
+import com.alecdorrington.scalgebra.ordered.ops.OrderedEuclideanMonoidOps
 
 /** An ordered version of [[EuclideanMonoid]]. */
 trait OrderedEuclideanMonoid[X]
@@ -12,7 +12,7 @@ trait OrderedEuclideanMonoid[X]
 /**
   * The companion object for [[OrderedEuclideanMonoid]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.ordered.OrderedEuclideanMonoid.{
+  * import com.alecdorrington.scalgebra.ordered.OrderedEuclideanMonoid.{
   *   *, given,
   * }
   * ```
@@ -21,7 +21,7 @@ trait OrderedEuclideanMonoid[X]
 object OrderedEuclideanMonoid
   extends OrderedEuclideanMonoidBuilder, OrderedEuclideanMonoidOps:
 
-  export com.alecdorrington.structures.ordered.OrderedEuclideanMonoid
+  export com.alecdorrington.scalgebra.ordered.OrderedEuclideanMonoid
 
   /**
     * The [[OrderedEuclideanMonoid]] instance describing the current algebra

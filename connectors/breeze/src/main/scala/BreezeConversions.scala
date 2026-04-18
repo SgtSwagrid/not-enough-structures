@@ -1,11 +1,11 @@
-package com.alecdorrington.structures.connector.breeze
+package com.alecdorrington.scalgebra.connector.breeze
 
 /**
   * Introduces compatibility between "Breeze" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import com.alecdorrington.structures.connector.breeze.BreezeConversions.given
+  * import com.alecdorrington.scalgebra.connector.breeze.BreezeConversions.given
   * ```
   */
 object BreezeConversions

@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedAdditiveGroup
-import com.alecdorrington.structures.ordered.OrderedAdditiveGroup
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedAdditiveGroup
+import com.alecdorrington.scalgebra.ordered.OrderedAdditiveGroup
 
 /** Methods for constructing [[OrderedAdditiveGroup]] type classes. */
 trait OrderedAdditiveGroupBuilder

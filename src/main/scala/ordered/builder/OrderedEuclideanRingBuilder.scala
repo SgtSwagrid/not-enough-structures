@@ -1,13 +1,13 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.numeric.{
+import com.alecdorrington.scalgebra.evidence.numeric.{
   BigIntIsOrderedEuclideanRing, ByteIsOrderedEuclideanRing,
   IntegralIsOrderedEuclideanRing, IntIsOrderedEuclideanRing,
   LongIsOrderedEuclideanRing, ShortIsOrderedEuclideanRing,
 }
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedEuclideanRing
-import com.alecdorrington.structures.ordered.OrderedEuclideanRing
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedEuclideanRing
+import com.alecdorrington.scalgebra.ordered.OrderedEuclideanRing
 
 /** Methods for constructing [[OrderedEuclideanRing]] type classes. */
 trait OrderedEuclideanRingBuilder

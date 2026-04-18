@@ -1,9 +1,9 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered
 
-import com.alecdorrington.structures.Semiring
-import com.alecdorrington.structures.ordered.builder.OrderedSemiringBuilder
-import com.alecdorrington.structures.ordered.ops.OrderedSemiringOps
+import com.alecdorrington.scalgebra.Semiring
+import com.alecdorrington.scalgebra.ordered.builder.OrderedSemiringBuilder
+import com.alecdorrington.scalgebra.ordered.ops.OrderedSemiringOps
 
 /** An ordered version of [[Semiring]]. */
 trait OrderedSemiring[X]
@@ -12,13 +12,13 @@ trait OrderedSemiring[X]
 /**
   * The companion object for [[OrderedSemiring]]. Import as
   * ```scala
-  * import com.alecdorrington.structures.ordered.OrderedSemiring.{*, given}
+  * import com.alecdorrington.scalgebra.ordered.OrderedSemiring.{*, given}
   * ```
   * to receive all necessary syntax for working with ordered semirings.
   */
 object OrderedSemiring extends OrderedSemiringBuilder, OrderedSemiringOps:
 
-  export com.alecdorrington.structures.ordered.OrderedSemiring
+  export com.alecdorrington.scalgebra.ordered.OrderedSemiring
 
   /** The [[OrderedSemiring]] instance describing the current algebra system. */
   inline def orderedSemiring[X : OrderedSemiring as orderedSemiring]

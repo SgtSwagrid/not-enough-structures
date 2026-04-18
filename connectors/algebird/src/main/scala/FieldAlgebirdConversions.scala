@@ -1,7 +1,7 @@
-package com.alecdorrington.structures.connector.algebird
+package com.alecdorrington.scalgebra.connector.algebird
 
 import com.twitter.algebird
-import com.alecdorrington.structures
+import com.alecdorrington.scalgebra
 
 /** Implicit conversions between [[structures.Field]] and [[algebird.Field]]. */
 trait FieldAlgebirdConversions:

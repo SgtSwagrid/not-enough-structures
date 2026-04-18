@@ -1,11 +1,11 @@
-package com.alecdorrington.structures.connector.zioprelude
+package com.alecdorrington.scalgebra.connector.zioprelude
 
 /**
   * Introduces compatibility between "ZIO Prelude" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import com.alecdorrington.structures.connector.zioprelude.ZioPreludeConversions.given
+  * import com.alecdorrington.scalgebra.connector.zioprelude.ZioPreludeConversions.given
   * ```
   *
   * @note

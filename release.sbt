@@ -2,7 +2,7 @@ ThisBuild / description :=
   "A collection of type classes for algebraic structures in Scala."
 
 ThisBuild / homepage :=
-  Some(url("https://github.com/SgtSwagrid/not-enough-structures"))
+  Some(url("https://github.com/SgtSwagrid/scalgebra"))
 
 ThisBuild / organization         := "com.alecdorrington"
 ThisBuild / organizationName     := "Alec Dorrington"
@@ -14,8 +14,8 @@ ThisBuild / licenses :=
   List("MIT" -> url("https://opensource.org/licenses/MIT"))
 
 ThisBuild / scmInfo := Some(ScmInfo(
-  url("https://github.com/SgtSwagrid/not-enough-structures"),
-  "scm:git@github.com/SgtSwagrid/not-enough-structures.git",
+  url("https://github.com/SgtSwagrid/scalgebra"),
+  "scm:git@github.com/SgtSwagrid/scalgebra.git",
 ))
 
 ThisBuild / developers := List(Developer(

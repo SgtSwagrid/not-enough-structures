@@ -1,15 +1,15 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.numeric.{
+import com.alecdorrington.scalgebra.evidence.numeric.{
   DoubleIsOrderedEuclideanRing, FloatIsOrderedField, FractionalIsOrderedField,
 }
-import com.alecdorrington.structures.evidence.trivial.{
+import com.alecdorrington.scalgebra.evidence.trivial.{
   EmptyTupleIsOrderedField, NoneIsOrderedField, NothingIsOrderedField,
   SingletonIsOrderedField, UnitIsOrderedField,
 }
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedField
-import com.alecdorrington.structures.ordered.OrderedField
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedField
+import com.alecdorrington.scalgebra.ordered.OrderedField
 
 /** Methods for constructing [[OrderedField]] type classes. */
 trait OrderedFieldBuilder

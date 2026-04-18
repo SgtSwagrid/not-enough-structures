@@ -1,8 +1,8 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package evidence
 package numeric
 
-import com.alecdorrington.structures.ordered.OrderedField
+import com.alecdorrington.scalgebra.ordered.OrderedField
 
 /**
   * Evidence that any type with a [[scala.math.Fractional]] instance forms an

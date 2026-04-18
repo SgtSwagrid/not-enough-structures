@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package builder
 
-import com.alecdorrington.structures.MultiplicativeMonoid
-import com.alecdorrington.structures.evidence.function.FunctionIsMultiplicativeMonoid
-import com.alecdorrington.structures.evidence.future.FutureIsMultiplicativeMonoid
-import com.alecdorrington.structures.evidence.tuple.TupleIsMultiplicativeMonoid
-import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeMonoidBuilder
+import com.alecdorrington.scalgebra.MultiplicativeMonoid
+import com.alecdorrington.scalgebra.evidence.function.FunctionIsMultiplicativeMonoid
+import com.alecdorrington.scalgebra.evidence.future.FutureIsMultiplicativeMonoid
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsMultiplicativeMonoid
+import com.alecdorrington.scalgebra.ordered.builder.OrderedMultiplicativeMonoidBuilder
 
 /** Methods for constructing [[MultiplicativeMonoid]] type classes. */
 trait MultiplicativeMonoidBuilder

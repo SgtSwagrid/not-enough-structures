@@ -1,4 +1,4 @@
-## com.alecdorrington.structures.ordered
+## com.alecdorrington.scalgebra.ordered
 
 This package contains _ordered_ variants of the algebraic type classes from the parent directory.
 There is exactly one _ordered_ trait for each _unordered_ trait.

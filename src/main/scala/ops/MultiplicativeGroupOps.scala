@@ -1,7 +1,7 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ops
 
-import com.alecdorrington.structures.MultiplicativeGroup
+import com.alecdorrington.scalgebra.MultiplicativeGroup
 
 /** Extension methods for [[MultiplicativeGroup]]. */
 trait MultiplicativeGroupOps

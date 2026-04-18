@@ -1,11 +1,11 @@
-package com.alecdorrington.structures
+package com.alecdorrington.scalgebra
 package ordered.builder
 
-import com.alecdorrington.structures.evidence.numeric.{
+import com.alecdorrington.scalgebra.evidence.numeric.{
   BooleanIsOrderedRing, NumericIsOrderedRing,
 }
-import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedRing
-import com.alecdorrington.structures.ordered.OrderedRing
+import com.alecdorrington.scalgebra.evidence.tuple.TupleIsOrderedRing
+import com.alecdorrington.scalgebra.ordered.OrderedRing
 
 /** Methods for constructing [[OrderedRing]] type classes. */
 trait OrderedRingBuilder

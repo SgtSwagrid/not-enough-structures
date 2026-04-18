@@ -7,7 +7,7 @@ It is not intended for human eyes.
 
 - Contains connectors that have conversions between our type classes and those of other libraries.
 - Each subdirectory corresponds to a single external library and a distinct sbt subproject.
-- For a connector to "Library X", the subdirectory here is called "library-x", and the sbt subproject is called "not-enough-structures-connector-library-x".
+- For a connector to "Library X", the subdirectory here is called "library-x", and the sbt subproject is called "scalgebra-connector-library-x".
 
 ## Instructions
 
@@ -20,6 +20,6 @@ It is not intended for human eyes.
   - Be consist and always use the same prefix for a given library.
   - You don't necessarily need to include the entire package name, especially if it is long. Just include enough to avoid ambiguity and make it clear from which library something originates.
   - Example 1: Don't use `algebra.Field` for `spire.algebra.Field` because from `algebra` alone we have no idea that the thing comes from Spire.
-  - Example 2: Don't use `com.alecdorrington.structures` for this library, because it is excessively verbose.
+  - Example 2: Don't use `com.alecdorrington.scalgebra` for this library, because it is excessively verbose.
 - If asked to add a connector for a new library, start with a search of the docs (or source) of the latest version of that library to identity which type classes are available.
 - The connector subprojects should be listed in alphabetical order in `build.sbt`.
