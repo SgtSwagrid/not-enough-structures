@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.builder
 
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsOrderedDifferenceSemiring
-import io.github.sgtswagrid.structures.ordered.OrderedDifferenceSemiring
+import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedDifferenceSemiring
+import com.alecdorrington.structures.ordered.OrderedDifferenceSemiring
 
 /** Methods for constructing [[OrderedDifferenceSemiring]] type classes. */
 trait OrderedDifferenceSemiringBuilder

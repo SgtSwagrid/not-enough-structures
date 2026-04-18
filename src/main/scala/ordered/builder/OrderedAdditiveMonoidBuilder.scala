@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.builder
 
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsOrderedAdditiveMonoid
-import io.github.sgtswagrid.structures.ordered.OrderedAdditiveMonoid
+import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedAdditiveMonoid
+import com.alecdorrington.structures.ordered.OrderedAdditiveMonoid
 
 /** Methods for constructing [[OrderedAdditiveMonoid]] type classes. */
 trait OrderedAdditiveMonoidBuilder

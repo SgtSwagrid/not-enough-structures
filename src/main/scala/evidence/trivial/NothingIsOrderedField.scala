@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence
 package trivial
 
-import io.github.sgtswagrid.structures.ordered.OrderedField
+import com.alecdorrington.structures.ordered.OrderedField
 
 /**
   * Evidence that [[Nothing]] forms an [[OrderedField]] vacuously, as no values

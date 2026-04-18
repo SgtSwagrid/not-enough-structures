@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.MultiplicativeSemigroup
+import com.alecdorrington.structures.MultiplicativeSemigroup
 
 /** Extension methods for [[MultiplicativeSemigroup]]. */
 trait MultiplicativeSemigroupOps:

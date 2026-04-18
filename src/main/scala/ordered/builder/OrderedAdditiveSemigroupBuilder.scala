@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.builder
 
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsOrderedAdditiveSemigroup
-import io.github.sgtswagrid.structures.ordered.OrderedAdditiveSemigroup
+import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedAdditiveSemigroup
+import com.alecdorrington.structures.ordered.OrderedAdditiveSemigroup
 
 /** Methods for constructing [[OrderedAdditiveSemigroup]] type classes. */
 trait OrderedAdditiveSemigroupBuilder

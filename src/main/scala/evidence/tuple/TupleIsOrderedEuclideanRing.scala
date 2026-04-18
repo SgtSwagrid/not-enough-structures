@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence.tuple
 
-import io.github.sgtswagrid.structures.ordered.OrderedEuclideanRing
+import com.alecdorrington.structures.ordered.OrderedEuclideanRing
 
 /**
   * Evidence that tuples of any arity up to 6 form an [[OrderedEuclideanRing]]

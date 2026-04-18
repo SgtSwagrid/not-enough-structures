@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures.connector.breeze
+package com.alecdorrington.structures.connector.breeze
 
 /**
   * Introduces compatibility between "Breeze" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import io.github.sgtswagrid.structures.connector.breeze.BreezeConversions.given
+  * import com.alecdorrington.structures.connector.breeze.BreezeConversions.given
   * ```
   */
 object BreezeConversions

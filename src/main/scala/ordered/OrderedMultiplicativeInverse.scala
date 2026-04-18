@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.MultiplicativeInverse
-import io.github.sgtswagrid.structures.ordered.builder.OrderedMultiplicativeInverseBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedMultiplicativeInverseOps
+import com.alecdorrington.structures.MultiplicativeInverse
+import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeInverseBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedMultiplicativeInverseOps
 
 /** An ordered version of [[MultiplicativeInverse]]. */
 trait OrderedMultiplicativeInverse[X]
@@ -12,7 +12,7 @@ trait OrderedMultiplicativeInverse[X]
 /**
   * The companion object for [[OrderedMultiplicativeInverse]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeInverse.{
+  * import com.alecdorrington.structures.ordered.OrderedMultiplicativeInverse.{
   *   *, given,
   * }
   * ```
@@ -22,7 +22,7 @@ trait OrderedMultiplicativeInverse[X]
 object OrderedMultiplicativeInverse
   extends OrderedMultiplicativeInverseBuilder, OrderedMultiplicativeInverseOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeInverse
+  export com.alecdorrington.structures.ordered.OrderedMultiplicativeInverse
 
   /**
     * The [[OrderedMultiplicativeInverse]] instance describing the current

@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.ops
 
-import io.github.sgtswagrid.structures.ops.SemiringOps
-import io.github.sgtswagrid.structures.ordered.OrderedSemiring
+import com.alecdorrington.structures.ops.SemiringOps
+import com.alecdorrington.structures.ordered.OrderedSemiring
 
 /** Extension methods for [[OrderedSemiring]]. */
 trait OrderedSemiringOps

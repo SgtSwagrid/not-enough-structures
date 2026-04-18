@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 
-import io.github.sgtswagrid.structures.builder.EuclideanMonoidBuilder
-import io.github.sgtswagrid.structures.ops.EuclideanMonoidOps
+import com.alecdorrington.structures.builder.EuclideanMonoidBuilder
+import com.alecdorrington.structures.ops.EuclideanMonoidOps
 
 /** For algebraic structures with multiplication and division. */
 trait EuclideanMonoid[X] extends MultiplicativeMonoid[X]:
@@ -12,13 +12,13 @@ trait EuclideanMonoid[X] extends MultiplicativeMonoid[X]:
 /**
   * The companion object for [[EuclideanMonoid]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.EuclideanMonoid.{*, given}
+  * import com.alecdorrington.structures.EuclideanMonoid.{*, given}
   * ```
   * to receive all necessary syntax for working with Euclidean monoids.
   */
 object EuclideanMonoid extends EuclideanMonoidBuilder, EuclideanMonoidOps:
 
-  export io.github.sgtswagrid.structures.EuclideanMonoid
+  export com.alecdorrington.structures.EuclideanMonoid
 
   /** The [[EuclideanMonoid]] instance describing the current algebra system. */
   inline def euclideanMonoid[X : EuclideanMonoid as euclideanMonoid]

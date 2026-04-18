@@ -1,6 +1,6 @@
-package io.github.sgtswagrid.structures.connector.breeze
+package com.alecdorrington.structures.connector.breeze
 
-import io.github.sgtswagrid.structures
+import com.alecdorrington.structures
 import breeze.math
 
 /**

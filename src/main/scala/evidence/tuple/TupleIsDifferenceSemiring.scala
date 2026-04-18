@@ -1,4 +1,4 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence.tuple
 
 /**

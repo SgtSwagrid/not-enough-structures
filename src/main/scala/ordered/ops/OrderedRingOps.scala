@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.ops
 
-import io.github.sgtswagrid.structures.ops.RingOps
-import io.github.sgtswagrid.structures.ordered.OrderedRing
+import com.alecdorrington.structures.ops.RingOps
+import com.alecdorrington.structures.ordered.OrderedRing
 
 /** Extension methods for [[OrderedRing]]. */
 trait OrderedRingOps

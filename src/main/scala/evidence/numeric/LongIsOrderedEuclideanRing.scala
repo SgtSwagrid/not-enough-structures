@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence
 package numeric
 
-import io.github.sgtswagrid.structures.ordered.OrderedEuclideanRing
+import com.alecdorrington.structures.ordered.OrderedEuclideanRing
 
 /**
   * Evidence that [[Long]] forms an [[OrderedEuclideanRing]] under standard

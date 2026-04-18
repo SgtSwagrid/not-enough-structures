@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures.connector.cats
+package com.alecdorrington.structures.connector.cats
 
 /**
   * Introduces compatibility between "Cats Algebra" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import io.github.sgtswagrid.structures.connector.cats.CatsConversions.given
+  * import com.alecdorrington.structures.connector.cats.CatsConversions.given
   * ```
   */
 object CatsConversions

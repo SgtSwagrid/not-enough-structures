@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.MultiplicativeMonoid
+import com.alecdorrington.structures.MultiplicativeMonoid
 
 /** Extension methods for [[MultiplicativeMonoid]]. */
 trait MultiplicativeMonoidOps

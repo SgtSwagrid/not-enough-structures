@@ -20,6 +20,6 @@ It is not intended for human eyes.
   - Be consist and always use the same prefix for a given library.
   - You don't necessarily need to include the entire package name, especially if it is long. Just include enough to avoid ambiguity and make it clear from which library something originates.
   - Example 1: Don't use `algebra.Field` for `spire.algebra.Field` because from `algebra` alone we have no idea that the thing comes from Spire.
-  - Example 2: Don't use `io.github.sgtswagrid.structures` for this library, because it is excessively verbose.
+  - Example 2: Don't use `com.alecdorrington.structures` for this library, because it is excessively verbose.
 - If asked to add a connector for a new library, start with a search of the docs (or source) of the latest version of that library to identity which type classes are available.
 - The connector subprojects should be listed in alphabetical order in `build.sbt`.

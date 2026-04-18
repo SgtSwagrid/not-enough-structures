@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures.connector.spire
+package com.alecdorrington.structures.connector.spire
 
 /**
   * Introduces compatibility between "Spire" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import io.github.sgtswagrid.structures.connector.spire.SpireConversions.given
+  * import com.alecdorrington.structures.connector.spire.SpireConversions.given
   * ```
   */
 object SpireConversions

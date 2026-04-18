@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence.tuple
 
-import io.github.sgtswagrid.structures.ordered.OrderedSemifield
+import com.alecdorrington.structures.ordered.OrderedSemifield
 
 /**
   * Evidence that tuples of arity 0 and 1 form an [[OrderedSemifield]] under

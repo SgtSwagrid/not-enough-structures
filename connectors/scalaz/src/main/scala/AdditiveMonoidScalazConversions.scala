@@ -1,6 +1,6 @@
-package io.github.sgtswagrid.structures.connector.scalaz
+package com.alecdorrington.structures.connector.scalaz
 
-import io.github.sgtswagrid.structures
+import com.alecdorrington.structures
 
 /**
   * Implicit conversions between [[structures.AdditiveMonoid]] and

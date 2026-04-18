@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.ops
 
-import io.github.sgtswagrid.structures.ops.EuclideanMonoidOps
-import io.github.sgtswagrid.structures.ordered.OrderedEuclideanMonoid
+import com.alecdorrington.structures.ops.EuclideanMonoidOps
+import com.alecdorrington.structures.ordered.OrderedEuclideanMonoid
 
 /** Extension methods for [[OrderedEuclideanMonoid]]. */
 trait OrderedEuclideanMonoidOps

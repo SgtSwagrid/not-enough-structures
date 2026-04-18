@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.AdditiveIdentity
-import io.github.sgtswagrid.structures.ordered.builder.OrderedAdditiveIdentityBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedAdditiveIdentityOps
+import com.alecdorrington.structures.AdditiveIdentity
+import com.alecdorrington.structures.ordered.builder.OrderedAdditiveIdentityBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedAdditiveIdentityOps
 
 /** An ordered version of [[AdditiveIdentity]]. */
 trait OrderedAdditiveIdentity[X] extends AdditiveIdentity[X], Ordering[X]:
@@ -23,7 +23,7 @@ trait OrderedAdditiveIdentity[X] extends AdditiveIdentity[X], Ordering[X]:
 /**
   * The companion object for [[OrderedAdditiveIdentity]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedAdditiveIdentity.{
+  * import com.alecdorrington.structures.ordered.OrderedAdditiveIdentity.{
   *   *, given,
   * }
   * ```
@@ -32,7 +32,7 @@ trait OrderedAdditiveIdentity[X] extends AdditiveIdentity[X], Ordering[X]:
 object OrderedAdditiveIdentity
   extends OrderedAdditiveIdentityBuilder, OrderedAdditiveIdentityOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedAdditiveIdentity
+  export com.alecdorrington.structures.ordered.OrderedAdditiveIdentity
 
   /**
     * The [[OrderedAdditiveIdentity]] instance describing the current algebra

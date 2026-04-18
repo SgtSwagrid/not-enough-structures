@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.DifferenceMonoid
-import io.github.sgtswagrid.structures.ordered.builder.OrderedDifferenceMonoidBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedDifferenceMonoidOps
+import com.alecdorrington.structures.DifferenceMonoid
+import com.alecdorrington.structures.ordered.builder.OrderedDifferenceMonoidBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedDifferenceMonoidOps
 
 /** An ordered version of [[DifferenceMonoid]]. */
 trait OrderedDifferenceMonoid[X]
@@ -12,7 +12,7 @@ trait OrderedDifferenceMonoid[X]
 /**
   * The companion object for [[OrderedDifferenceMonoid]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedDifferenceMonoid.{
+  * import com.alecdorrington.structures.ordered.OrderedDifferenceMonoid.{
   *   *, given,
   * }
   * ```
@@ -21,7 +21,7 @@ trait OrderedDifferenceMonoid[X]
 object OrderedDifferenceMonoid
   extends OrderedDifferenceMonoidBuilder, OrderedDifferenceMonoidOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedDifferenceMonoid
+  export com.alecdorrington.structures.ordered.OrderedDifferenceMonoid
 
   /**
     * The [[OrderedDifferenceMonoid]] instance describing the current algebra

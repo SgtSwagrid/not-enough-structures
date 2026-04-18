@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.ops
 
-import io.github.sgtswagrid.structures.ops.MultiplicativeMonoidOps
-import io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeMonoid
+import com.alecdorrington.structures.ops.MultiplicativeMonoidOps
+import com.alecdorrington.structures.ordered.OrderedMultiplicativeMonoid
 
 /** Extension methods for [[OrderedMultiplicativeMonoid]]. */
 trait OrderedMultiplicativeMonoidOps

@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.ops
 
-import io.github.sgtswagrid.structures.ops.FieldOps
-import io.github.sgtswagrid.structures.ordered.OrderedField
+import com.alecdorrington.structures.ops.FieldOps
+import com.alecdorrington.structures.ordered.OrderedField
 
 /** Extension methods for [[OrderedField]]. */
 trait OrderedFieldOps

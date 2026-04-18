@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence.tuple
 
-import io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeIdentity
+import com.alecdorrington.structures.ordered.OrderedMultiplicativeIdentity
 
 /**
   * Evidence that tuples of any arity up to 6 have an

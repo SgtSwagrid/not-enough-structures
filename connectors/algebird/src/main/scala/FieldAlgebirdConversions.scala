@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures.connector.algebird
+package com.alecdorrington.structures.connector.algebird
 
 import com.twitter.algebird
-import io.github.sgtswagrid.structures
+import com.alecdorrington.structures
 
 /** Implicit conversions between [[structures.Field]] and [[algebird.Field]]. */
 trait FieldAlgebirdConversions:

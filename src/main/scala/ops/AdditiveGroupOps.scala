@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.AdditiveGroup
+import com.alecdorrington.structures.AdditiveGroup
 
 /** Extension methods for [[AdditiveGroup]]. */
 trait AdditiveGroupOps extends DifferenceMonoidOps, AdditiveInverseOps:

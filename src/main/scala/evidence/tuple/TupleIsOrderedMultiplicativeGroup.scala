@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence.tuple
 
-import io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeGroup
+import com.alecdorrington.structures.ordered.OrderedMultiplicativeGroup
 
 /**
   * Evidence that tuples of arity 0 and 1 form an [[OrderedMultiplicativeGroup]]

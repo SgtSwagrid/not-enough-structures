@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package builder
 
-import io.github.sgtswagrid.structures.AdditiveInverse
-import io.github.sgtswagrid.structures.evidence.function.FunctionIsAdditiveInverse
-import io.github.sgtswagrid.structures.evidence.future.FutureIsAdditiveInverse
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsAdditiveInverse
-import io.github.sgtswagrid.structures.ordered.builder.OrderedAdditiveInverseBuilder
+import com.alecdorrington.structures.AdditiveInverse
+import com.alecdorrington.structures.evidence.function.FunctionIsAdditiveInverse
+import com.alecdorrington.structures.evidence.future.FutureIsAdditiveInverse
+import com.alecdorrington.structures.evidence.tuple.TupleIsAdditiveInverse
+import com.alecdorrington.structures.ordered.builder.OrderedAdditiveInverseBuilder
 
 /** Methods for constructing [[AdditiveInverse]] type classes. */
 trait AdditiveInverseBuilder

@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.builder
 
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsOrderedDifferenceMonoid
-import io.github.sgtswagrid.structures.ordered.OrderedDifferenceMonoid
+import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedDifferenceMonoid
+import com.alecdorrington.structures.ordered.OrderedDifferenceMonoid
 
 /** Methods for constructing [[OrderedDifferenceMonoid]] type classes. */
 trait OrderedDifferenceMonoidBuilder

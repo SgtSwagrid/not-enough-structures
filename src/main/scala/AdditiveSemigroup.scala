@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 
-import io.github.sgtswagrid.structures.builder.AdditiveSemigroupBuilder
-import io.github.sgtswagrid.structures.ops.AdditiveSemigroupOps
+import com.alecdorrington.structures.builder.AdditiveSemigroupBuilder
+import com.alecdorrington.structures.ops.AdditiveSemigroupOps
 
 /** For algebraic structures with an associative addition operator. */
 trait AdditiveSemigroup[X]:
@@ -50,13 +50,13 @@ trait AdditiveSemigroup[X]:
 /**
   * The companion object for [[AdditiveSemigroup]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.AdditiveSemigroup.{*, given}
+  * import com.alecdorrington.structures.AdditiveSemigroup.{*, given}
   * ```
   * to receive all necessary syntax for working with additive semigroups.
   */
 object AdditiveSemigroup extends AdditiveSemigroupBuilder, AdditiveSemigroupOps:
 
-  export io.github.sgtswagrid.structures.AdditiveSemigroup
+  export com.alecdorrington.structures.AdditiveSemigroup
 
   /** The [[AdditiveSemigroup]] instance describing the current algebra system. */
   inline def additiveSemigroup[X : AdditiveSemigroup as additiveSemigroup]

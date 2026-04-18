@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 
-import io.github.sgtswagrid.structures.builder.DifferenceSemiringBuilder
-import io.github.sgtswagrid.structures.ops.DifferenceSemiringOps
+import com.alecdorrington.structures.builder.DifferenceSemiringBuilder
+import com.alecdorrington.structures.ops.DifferenceSemiringOps
 
 /** For algebraic structures with addition, subtraction, and multiplication. */
 trait DifferenceSemiring[X] extends Semiring[X], DifferenceMonoid[X]
@@ -9,14 +9,14 @@ trait DifferenceSemiring[X] extends Semiring[X], DifferenceMonoid[X]
 /**
   * The companion object for [[DifferenceSemiring]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.DifferenceSemiring.{*, given}
+  * import com.alecdorrington.structures.DifferenceSemiring.{*, given}
   * ```
   * to receive all necessary syntax for working with difference semirings.
   */
 object DifferenceSemiring
   extends DifferenceSemiringBuilder, DifferenceSemiringOps:
 
-  export io.github.sgtswagrid.structures.DifferenceSemiring
+  export com.alecdorrington.structures.DifferenceSemiring
 
   /** The [[DifferenceSemiring]] instance describing the current algebra system. */
   inline def differenceSemiring[X : DifferenceSemiring as differenceSemiring]

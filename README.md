@@ -5,7 +5,7 @@
   
   <span>
     <a href="https://github.com/SgtSwagrid/not-enough-structures/actions/workflows/build-integrity.yml"><img src="https://github.com/SgtSwagrid/not-enough-structures/actions/workflows/build-integrity.yml/badge.svg" alt="Build status" /></a>
-    <a href="https://search.maven.org/artifact/io.github.sgtswagrid/not-enough-structures_3"><img src="https://img.shields.io/maven-central/v/io.github.sgtswagrid/not-enough-structures_3.svg" alt="Maven Central" /></a>
+    <a href="https://search.maven.org/artifact/com.alecdorrington/not-enough-structures_3"><img src="https://img.shields.io/maven-central/v/com.alecdorrington/not-enough-structures_3.svg" alt="Maven Central" /></a>
   </span>
   
 </div>
@@ -19,7 +19,7 @@ It is aimed at **library designers** rather than end users. If you are writing a
 ### Example
 
 ```scala 3
-import io.github.sgtswagrid.structures.Ring.{*, given}
+import com.alecdorrington.structures.Ring.{*, given}
 
 // Only requires addition, negation, and multiplication (not division).
 def dot[X : Ring](xs: Seq[X], ys: Seq[X]): X =
@@ -33,7 +33,7 @@ Your users can then call `dot` on any type for which a `Ring` is in scope, inclu
 Add the following dependency to your `build.sbt`:
 
 ```scala
-libraryDependencies += "io.github.sgtswagrid" %% "not-enough-structures" % "0.1.4"
+libraryDependencies += "com.alecdorrington" %% "not-enough-structures" % "0.1.4"
 ```
 
 Requires Scala 3.
@@ -57,13 +57,13 @@ def double[X : AdditiveSemigroup](x: X): X = x + x
 Each type class exposes all necessary syntax through its companion object. Import it with:
 
 ```scala 3
-import io.github.sgtswagrid.structures.<TypeClass>.{*, given}
+import com.alecdorrington.structures.<TypeClass>.{*, given}
 ```
 
 You only need one import regardless of how many capabilities the type class bundles.
 
 ```scala 3
-import io.github.sgtswagrid.structures.EuclideanRing.{*, given}
+import com.alecdorrington.structures.EuclideanRing.{*, given}
 
 def gcdNorm[X : EuclideanRing as E](xs: Seq[X]): X =
   xs.reduce(E.gcd)  // gcd, +, -, *, /, % all available
@@ -74,7 +74,7 @@ def gcdNorm[X : EuclideanRing as E](xs: Seq[X]): X =
 To make your own type work with these type classes, provide a `given` instance:
 
 ```scala 3
-import io.github.sgtswagrid.structures.AdditiveMonoid
+import com.alecdorrington.structures.AdditiveMonoid
 
 case class Vec2(x: Double, y: Double)
 
@@ -90,7 +90,7 @@ For in-built types (`Int`, `Double`, etc.), evidence is already included; see [b
 The `ordered` subpackage provides `Ordered`-prefixed variants that combine each type class with `Ordering[X]`. Use these when your algorithm needs both algebraic operations and comparisons under a single context bound.
 
 ```scala 3
-import io.github.sgtswagrid.structures.ordered.OrderedField.{*, given}
+import com.alecdorrington.structures.ordered.OrderedField.{*, given}
 
 def clamp[X : OrderedField](x: X, lb: X, ub: X): X = x.clamp(lb, ub)
 ```
@@ -109,13 +109,13 @@ Each connector is published under the name
 `not-enough-structures-connector-<library-name>`
 and can be installed using:
 ```scala
-libraryDependencies += "io.github.sgtswagrid" %% "not-enough-structures-connector-<library-name>" % "0.1.4"
+libraryDependencies += "com.alecdorrington" %% "not-enough-structures-connector-<library-name>" % "0.1.4"
 ```
 The version of the connector always matches the version of the core _Not Enough Structures_ library.
 
 The following import statement will then load all relevant conversions:
 ```scala
-import io.github.sgtswagrid.structures.connector.<libraryname>.<LibraryName>Conversions.given
+import com.alecdorrington.structures.connector.<libraryname>.<LibraryName>Conversions.given
 ```
 
 This could even be used to convert between algebra systems from multiple foreign libraries,
@@ -132,7 +132,7 @@ with no intention to ever use the intermediates that exist here.
 
 ## 📐 Type class reference
 
-The complete hierarchy is shown below. Each trait is in the package `io.github.sgtswagrid.structures`.
+The complete hierarchy is shown below. Each trait is in the package `com.alecdorrington.structures`.
 
 ### Component traits
 

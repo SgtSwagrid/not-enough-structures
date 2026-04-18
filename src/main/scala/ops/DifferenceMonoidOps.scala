@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.DifferenceMonoid
+import com.alecdorrington.structures.DifferenceMonoid
 
 /** Extension methods for [[DifferenceMonoid]]. */
 trait DifferenceMonoidOps extends AdditiveMonoidOps:

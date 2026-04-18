@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.AdditiveMonoid
+import com.alecdorrington.structures.AdditiveMonoid
 
 /** Extension methods for [[AdditiveMonoid]]. */
 trait AdditiveMonoidOps extends AdditiveSemigroupOps, AdditiveIdentityOps:

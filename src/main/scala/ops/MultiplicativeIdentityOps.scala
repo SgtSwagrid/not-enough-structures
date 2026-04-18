@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.MultiplicativeIdentity
+import com.alecdorrington.structures.MultiplicativeIdentity
 
 /** Extension methods for [[MultiplicativeIdentity]]. */
 trait MultiplicativeIdentityOps:

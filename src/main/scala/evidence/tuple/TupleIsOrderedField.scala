@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence.tuple
 
-import io.github.sgtswagrid.structures.ordered.OrderedField
+import com.alecdorrington.structures.ordered.OrderedField
 
 /**
   * Evidence that tuples of arity 0 and 1 form an [[OrderedField]] under

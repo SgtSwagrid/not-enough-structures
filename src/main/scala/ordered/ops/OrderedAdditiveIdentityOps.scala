@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.ops
 
-import io.github.sgtswagrid.structures.ops.AdditiveIdentityOps
-import io.github.sgtswagrid.structures.ordered.OrderedAdditiveIdentity
+import com.alecdorrington.structures.ops.AdditiveIdentityOps
+import com.alecdorrington.structures.ordered.OrderedAdditiveIdentity
 
 /** Extension methods for [[OrderedAdditiveIdentity]]. */
 trait OrderedAdditiveIdentityOps extends AdditiveIdentityOps, OrderingOps

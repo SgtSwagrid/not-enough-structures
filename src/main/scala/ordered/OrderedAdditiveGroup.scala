@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.AdditiveGroup
-import io.github.sgtswagrid.structures.ordered.builder.OrderedAdditiveGroupBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedAdditiveGroupOps
+import com.alecdorrington.structures.AdditiveGroup
+import com.alecdorrington.structures.ordered.builder.OrderedAdditiveGroupBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedAdditiveGroupOps
 
 /** An ordered version of [[AdditiveGroup]]. */
 trait OrderedAdditiveGroup[X]
@@ -17,7 +17,7 @@ trait OrderedAdditiveGroup[X]
 /**
   * The companion object for [[OrderedAdditiveGroup]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedAdditiveGroup.{
+  * import com.alecdorrington.structures.ordered.OrderedAdditiveGroup.{
   *   *, given,
   * }
   * ```
@@ -26,7 +26,7 @@ trait OrderedAdditiveGroup[X]
 object OrderedAdditiveGroup
   extends OrderedAdditiveGroupBuilder, OrderedAdditiveGroupOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedAdditiveGroup
+  export com.alecdorrington.structures.ordered.OrderedAdditiveGroup
 
   /**
     * The [[OrderedAdditiveGroup]] instance describing the current algebra

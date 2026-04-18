@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package builder
 
-import io.github.sgtswagrid.structures.Field
-import io.github.sgtswagrid.structures.evidence.function.FunctionIsField
-import io.github.sgtswagrid.structures.evidence.future.FutureIsField
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsField
-import io.github.sgtswagrid.structures.ordered.builder.OrderedFieldBuilder
+import com.alecdorrington.structures.Field
+import com.alecdorrington.structures.evidence.function.FunctionIsField
+import com.alecdorrington.structures.evidence.future.FutureIsField
+import com.alecdorrington.structures.evidence.tuple.TupleIsField
+import com.alecdorrington.structures.ordered.builder.OrderedFieldBuilder
 
 /** Methods for constructing [[Field]] type classes. */
 trait FieldBuilder

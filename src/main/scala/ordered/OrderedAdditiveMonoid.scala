@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.AdditiveMonoid
-import io.github.sgtswagrid.structures.ordered.builder.OrderedAdditiveMonoidBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedAdditiveMonoidOps
+import com.alecdorrington.structures.AdditiveMonoid
+import com.alecdorrington.structures.ordered.builder.OrderedAdditiveMonoidBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedAdditiveMonoidOps
 
 /** An ordered version of [[AdditiveMonoid]]. */
 trait OrderedAdditiveMonoid[X]
@@ -14,7 +14,7 @@ trait OrderedAdditiveMonoid[X]
 /**
   * The companion object for [[OrderedAdditiveMonoid]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedAdditiveMonoid.{
+  * import com.alecdorrington.structures.ordered.OrderedAdditiveMonoid.{
   *   *, given,
   * }
   * ```
@@ -23,7 +23,7 @@ trait OrderedAdditiveMonoid[X]
 object OrderedAdditiveMonoid
   extends OrderedAdditiveMonoidBuilder, OrderedAdditiveMonoidOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedAdditiveMonoid
+  export com.alecdorrington.structures.ordered.OrderedAdditiveMonoid
 
   /**
     * The [[OrderedAdditiveMonoid]] instance describing the current algebra

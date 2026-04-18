@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package builder
 
-import io.github.sgtswagrid.structures.MultiplicativeSemigroup
-import io.github.sgtswagrid.structures.evidence.function.FunctionIsMultiplicativeSemigroup
-import io.github.sgtswagrid.structures.evidence.future.FutureIsMultiplicativeSemigroup
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsMultiplicativeSemigroup
-import io.github.sgtswagrid.structures.ordered.builder.OrderedMultiplicativeSemigroupBuilder
+import com.alecdorrington.structures.MultiplicativeSemigroup
+import com.alecdorrington.structures.evidence.function.FunctionIsMultiplicativeSemigroup
+import com.alecdorrington.structures.evidence.future.FutureIsMultiplicativeSemigroup
+import com.alecdorrington.structures.evidence.tuple.TupleIsMultiplicativeSemigroup
+import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeSemigroupBuilder
 
 /** Methods for constructing [[MultiplicativeSemigroup]] type classes. */
 trait MultiplicativeSemigroupBuilder

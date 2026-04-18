@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.Semiring
+import com.alecdorrington.structures.Semiring
 
 /** Extension methods for [[Semiring]]. */
 trait SemiringOps extends AdditiveMonoidOps, MultiplicativeMonoidOps:

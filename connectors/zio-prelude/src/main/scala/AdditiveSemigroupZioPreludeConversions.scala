@@ -1,6 +1,6 @@
-package io.github.sgtswagrid.structures.connector.zioprelude
+package com.alecdorrington.structures.connector.zioprelude
 
-import io.github.sgtswagrid.structures
+import com.alecdorrington.structures
 
 /**
   * Implicit conversions between [[structures.AdditiveSemigroup]] and

@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.builder
 
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsOrderedAdditiveGroup
-import io.github.sgtswagrid.structures.ordered.OrderedAdditiveGroup
+import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedAdditiveGroup
+import com.alecdorrington.structures.ordered.OrderedAdditiveGroup
 
 /** Methods for constructing [[OrderedAdditiveGroup]] type classes. */
 trait OrderedAdditiveGroupBuilder

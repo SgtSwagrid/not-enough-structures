@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.MultiplicativeGroup
+import com.alecdorrington.structures.MultiplicativeGroup
 
 /** Extension methods for [[MultiplicativeGroup]]. */
 trait MultiplicativeGroupOps

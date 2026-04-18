@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.AdditiveInverse
+import com.alecdorrington.structures.AdditiveInverse
 
 /** Extension methods for [[AdditiveInverse]]. */
 trait AdditiveInverseOps:

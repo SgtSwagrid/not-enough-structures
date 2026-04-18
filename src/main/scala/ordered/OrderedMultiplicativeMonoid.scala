@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.MultiplicativeMonoid
-import io.github.sgtswagrid.structures.ordered.builder.OrderedMultiplicativeMonoidBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedMultiplicativeMonoidOps
+import com.alecdorrington.structures.MultiplicativeMonoid
+import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeMonoidBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedMultiplicativeMonoidOps
 
 /** An ordered version of [[MultiplicativeMonoid]]. */
 trait OrderedMultiplicativeMonoid[X]
@@ -14,7 +14,7 @@ trait OrderedMultiplicativeMonoid[X]
 /**
   * The companion object for [[OrderedMultiplicativeMonoid]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeMonoid.{
+  * import com.alecdorrington.structures.ordered.OrderedMultiplicativeMonoid.{
   *   *, given,
   * }
   * ```
@@ -24,7 +24,7 @@ trait OrderedMultiplicativeMonoid[X]
 object OrderedMultiplicativeMonoid
   extends OrderedMultiplicativeMonoidBuilder, OrderedMultiplicativeMonoidOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeMonoid
+  export com.alecdorrington.structures.ordered.OrderedMultiplicativeMonoid
 
   /**
     * The [[OrderedMultiplicativeMonoid]] instance describing the current

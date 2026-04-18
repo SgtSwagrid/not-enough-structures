@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package builder
 
-import io.github.sgtswagrid.structures.DifferenceSemiring
-import io.github.sgtswagrid.structures.evidence.function.FunctionIsDifferenceSemiring
-import io.github.sgtswagrid.structures.evidence.future.FutureIsDifferenceSemiring
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsDifferenceSemiring
-import io.github.sgtswagrid.structures.ordered.builder.OrderedDifferenceSemiringBuilder
+import com.alecdorrington.structures.DifferenceSemiring
+import com.alecdorrington.structures.evidence.function.FunctionIsDifferenceSemiring
+import com.alecdorrington.structures.evidence.future.FutureIsDifferenceSemiring
+import com.alecdorrington.structures.evidence.tuple.TupleIsDifferenceSemiring
+import com.alecdorrington.structures.ordered.builder.OrderedDifferenceSemiringBuilder
 
 /** Methods for constructing [[DifferenceSemiring]] type classes. */
 trait DifferenceSemiringBuilder

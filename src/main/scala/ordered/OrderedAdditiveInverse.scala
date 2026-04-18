@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.AdditiveInverse
-import io.github.sgtswagrid.structures.ordered.builder.OrderedAdditiveInverseBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedAdditiveInverseOps
+import com.alecdorrington.structures.AdditiveInverse
+import com.alecdorrington.structures.ordered.builder.OrderedAdditiveInverseBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedAdditiveInverseOps
 
 /** An ordered version of [[AdditiveInverse]]. */
 trait OrderedAdditiveInverse[X] extends AdditiveInverse[X], Ordering[X]
@@ -11,7 +11,7 @@ trait OrderedAdditiveInverse[X] extends AdditiveInverse[X], Ordering[X]
 /**
   * The companion object for [[OrderedAdditiveInverse]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedAdditiveInverse.{
+  * import com.alecdorrington.structures.ordered.OrderedAdditiveInverse.{
   *   *, given,
   * }
   * ```
@@ -20,7 +20,7 @@ trait OrderedAdditiveInverse[X] extends AdditiveInverse[X], Ordering[X]
 object OrderedAdditiveInverse
   extends OrderedAdditiveInverseBuilder, OrderedAdditiveInverseOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedAdditiveInverse
+  export com.alecdorrington.structures.ordered.OrderedAdditiveInverse
 
   /**
     * The [[OrderedAdditiveInverse]] instance describing the current algebra

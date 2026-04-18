@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package evidence
 package numeric
 
-import io.github.sgtswagrid.structures.ordered.OrderedRing
+import com.alecdorrington.structures.ordered.OrderedRing
 
 /**
   * Evidence that [[Boolean]] forms an [[OrderedRing]] over `GF(2)`, with `XOR`

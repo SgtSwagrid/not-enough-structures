@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package builder
 
-import io.github.sgtswagrid.structures.Ring
-import io.github.sgtswagrid.structures.evidence.function.FunctionIsRing
-import io.github.sgtswagrid.structures.evidence.future.FutureIsRing
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsRing
-import io.github.sgtswagrid.structures.ordered.builder.OrderedRingBuilder
+import com.alecdorrington.structures.Ring
+import com.alecdorrington.structures.evidence.function.FunctionIsRing
+import com.alecdorrington.structures.evidence.future.FutureIsRing
+import com.alecdorrington.structures.evidence.tuple.TupleIsRing
+import com.alecdorrington.structures.ordered.builder.OrderedRingBuilder
 
 /** Methods for constructing [[Ring]] type classes. */
 trait RingBuilder

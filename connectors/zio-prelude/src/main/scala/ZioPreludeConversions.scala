@@ -1,11 +1,11 @@
-package io.github.sgtswagrid.structures.connector.zioprelude
+package com.alecdorrington.structures.connector.zioprelude
 
 /**
   * Introduces compatibility between "ZIO Prelude" type classes and our own.
   *
   * Import as:
   * ```scala
-  * import io.github.sgtswagrid.structures.connector.zioprelude.ZioPreludeConversions.given
+  * import com.alecdorrington.structures.connector.zioprelude.ZioPreludeConversions.given
   * ```
   *
   * @note

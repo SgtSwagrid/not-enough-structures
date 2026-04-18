@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ops
 
-import io.github.sgtswagrid.structures.Semifield
+import com.alecdorrington.structures.Semifield
 
 /** Extension methods for [[Semifield]]. */
 trait SemifieldOps extends SemiringOps, MultiplicativeGroupOps

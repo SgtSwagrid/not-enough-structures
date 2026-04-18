@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 
-import io.github.sgtswagrid.structures.builder.AdditiveInverseBuilder
-import io.github.sgtswagrid.structures.ops.AdditiveInverseOps
+import com.alecdorrington.structures.builder.AdditiveInverseBuilder
+import com.alecdorrington.structures.ops.AdditiveInverseOps
 
 /** For algebraic structures with an additive inverse. */
 trait AdditiveInverse[X]:
@@ -17,13 +17,13 @@ trait AdditiveInverse[X]:
 /**
   * The companion object for [[AdditiveInverse]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.AdditiveInverse.{*, given}
+  * import com.alecdorrington.structures.AdditiveInverse.{*, given}
   * ```
   * to receive all necessary syntax for working with additive inverses.
   */
 object AdditiveInverse extends AdditiveInverseBuilder, AdditiveInverseOps:
 
-  export io.github.sgtswagrid.structures.AdditiveInverse
+  export com.alecdorrington.structures.AdditiveInverse
 
   /** The [[AdditiveInverse]] instance describing the current algebra system. */
   inline def additiveInverse[X : AdditiveInverse as additiveInverse]

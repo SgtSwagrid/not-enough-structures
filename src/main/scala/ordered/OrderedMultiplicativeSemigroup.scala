@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.MultiplicativeSemigroup
-import io.github.sgtswagrid.structures.ordered.builder.OrderedMultiplicativeSemigroupBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedMultiplicativeSemigroupOps
+import com.alecdorrington.structures.MultiplicativeSemigroup
+import com.alecdorrington.structures.ordered.builder.OrderedMultiplicativeSemigroupBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedMultiplicativeSemigroupOps
 
 /** An ordered version of [[MultiplicativeSemigroup]]. */
 trait OrderedMultiplicativeSemigroup[X]
@@ -12,7 +12,7 @@ trait OrderedMultiplicativeSemigroup[X]
 /**
   * The companion object for [[OrderedMultiplicativeSemigroup]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeSemigroup.{
+  * import com.alecdorrington.structures.ordered.OrderedMultiplicativeSemigroup.{
   *   *, given,
   * }
   * ```
@@ -23,7 +23,7 @@ object OrderedMultiplicativeSemigroup
   extends OrderedMultiplicativeSemigroupBuilder,
           OrderedMultiplicativeSemigroupOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeSemigroup
+  export com.alecdorrington.structures.ordered.OrderedMultiplicativeSemigroup
 
   /**
     * The [[OrderedMultiplicativeSemigroup]] instance describing the current

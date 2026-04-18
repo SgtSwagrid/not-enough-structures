@@ -1,9 +1,9 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered
 
-import io.github.sgtswagrid.structures.Semifield
-import io.github.sgtswagrid.structures.ordered.builder.OrderedSemifieldBuilder
-import io.github.sgtswagrid.structures.ordered.ops.OrderedSemifieldOps
+import com.alecdorrington.structures.Semifield
+import com.alecdorrington.structures.ordered.builder.OrderedSemifieldBuilder
+import com.alecdorrington.structures.ordered.ops.OrderedSemifieldOps
 
 /** An ordered version of [[Semifield]]. */
 trait OrderedSemifield[X]
@@ -12,13 +12,13 @@ trait OrderedSemifield[X]
 /**
   * The companion object for [[OrderedSemifield]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.ordered.OrderedSemifield.{*, given}
+  * import com.alecdorrington.structures.ordered.OrderedSemifield.{*, given}
   * ```
   * to receive all necessary syntax for working with ordered semifields.
   */
 object OrderedSemifield extends OrderedSemifieldBuilder, OrderedSemifieldOps:
 
-  export io.github.sgtswagrid.structures.ordered.OrderedSemifield
+  export com.alecdorrington.structures.ordered.OrderedSemifield
 
   /** The [[OrderedSemifield]] instance describing the current algebra system. */
   inline def orderedSemifield[X : OrderedSemifield as orderedSemifield]

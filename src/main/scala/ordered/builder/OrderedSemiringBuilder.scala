@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.builder
 
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsOrderedSemiring
-import io.github.sgtswagrid.structures.ordered.OrderedSemiring
+import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedSemiring
+import com.alecdorrington.structures.ordered.OrderedSemiring
 
 /** Methods for constructing [[OrderedSemiring]] type classes. */
 trait OrderedSemiringBuilder

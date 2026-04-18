@@ -1,6 +1,6 @@
-package io.github.sgtswagrid.structures.connector.cats
+package com.alecdorrington.structures.connector.cats
 
-import io.github.sgtswagrid.structures
+import com.alecdorrington.structures
 
 /**
   * Implicit conversions between [[structures.AdditiveMonoid]] and

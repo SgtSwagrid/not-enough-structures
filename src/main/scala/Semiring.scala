@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 
-import io.github.sgtswagrid.structures.builder.SemiringBuilder
-import io.github.sgtswagrid.structures.ops.SemiringOps
+import com.alecdorrington.structures.builder.SemiringBuilder
+import com.alecdorrington.structures.ops.SemiringOps
 
 /** For algebraic structures with both addition and multiplication. */
 trait Semiring[X] extends AdditiveMonoid[X], MultiplicativeMonoid[X]:
@@ -12,13 +12,13 @@ trait Semiring[X] extends AdditiveMonoid[X], MultiplicativeMonoid[X]:
 /**
   * The companion object for [[Semiring]]. Import as
   * ```scala
-  * import io.github.sgtswagrid.structures.Semiring.{*, given}
+  * import com.alecdorrington.structures.Semiring.{*, given}
   * ```
   * to receive all necessary syntax for working with semirings.
   */
 object Semiring extends SemiringBuilder, SemiringOps:
 
-  export io.github.sgtswagrid.structures.Semiring
+  export com.alecdorrington.structures.Semiring
 
   /** The [[Semiring]] instance describing the current algebra system. */
   inline def semiring[X : Semiring as semiring]: Semiring[X] = semiring

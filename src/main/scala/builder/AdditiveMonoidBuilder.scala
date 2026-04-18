@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package builder
 
-import io.github.sgtswagrid.structures.evidence.collection.{
+import com.alecdorrington.structures.evidence.collection.{
   ArrayIsAdditiveMonoid, ArraySeqIsAdditiveMonoid, EitherIsAdditiveMonoid,
   IArrayIsAdditiveMonoid, LazyListIsAdditiveMonoid, ListIsAdditiveMonoid,
   MapIsAdditiveMonoid, OptionIsAdditiveMonoid, QueueIsAdditiveMonoid,
@@ -9,10 +9,10 @@ import io.github.sgtswagrid.structures.evidence.collection.{
   SortedSetIsAdditiveMonoid, StringIsAdditiveMonoid, TryIsAdditiveMonoid,
   VectorIsAdditiveMonoid,
 }
-import io.github.sgtswagrid.structures.evidence.function.FunctionIsAdditiveMonoid
-import io.github.sgtswagrid.structures.evidence.future.FutureIsAdditiveMonoid
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsAdditiveMonoid
-import io.github.sgtswagrid.structures.ordered.builder.OrderedAdditiveMonoidBuilder
+import com.alecdorrington.structures.evidence.function.FunctionIsAdditiveMonoid
+import com.alecdorrington.structures.evidence.future.FutureIsAdditiveMonoid
+import com.alecdorrington.structures.evidence.tuple.TupleIsAdditiveMonoid
+import com.alecdorrington.structures.ordered.builder.OrderedAdditiveMonoidBuilder
 
 /** Methods for constructing [[AdditiveMonoid]] type classes. */
 trait AdditiveMonoidBuilder

@@ -1,8 +1,8 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.builder
 
-import io.github.sgtswagrid.structures.evidence.tuple.TupleIsOrderedMultiplicativeSemigroup
-import io.github.sgtswagrid.structures.ordered.OrderedMultiplicativeSemigroup
+import com.alecdorrington.structures.evidence.tuple.TupleIsOrderedMultiplicativeSemigroup
+import com.alecdorrington.structures.ordered.OrderedMultiplicativeSemigroup
 
 /** Methods for constructing [[OrderedMultiplicativeSemigroup]] type classes. */
 trait OrderedMultiplicativeSemigroupBuilder

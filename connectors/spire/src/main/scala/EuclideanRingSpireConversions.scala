@@ -1,6 +1,6 @@
-package io.github.sgtswagrid.structures.connector.spire
+package com.alecdorrington.structures.connector.spire
 
-import io.github.sgtswagrid.structures
+import com.alecdorrington.structures
 import spire.algebra
 
 /**

@@ -1,7 +1,7 @@
-package io.github.sgtswagrid.structures
+package com.alecdorrington.structures
 package ordered.ops
 
-/** Extension methods for ordered io.github.sgtswagrid.structures. */
+/** Extension methods for ordered com.alecdorrington.structures. */
 trait OrderingOps:
 
   extension [X : Ordering as X](x: X)
